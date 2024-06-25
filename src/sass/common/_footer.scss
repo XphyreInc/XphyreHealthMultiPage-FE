@@ -402,12 +402,9 @@
   z-index: 2;
 }
 .cs_text_widget {
-  font-size: 20px;
-  line-height: 1.5em;
+  height: 4rem;
+  font-size: 40px;
   font-weight: 500;
-  p {
-    margin: 0;
-  }
 }
 .cs_contact_widget {
   list-style: none;
@@ -463,13 +460,18 @@
     transform: rotateX(-20deg) rotateY(360deg);
   }
 }
+.cs_footer_background {
+  border: none;
+  padding: 16px 0;
+  background: linear-gradient(to right, $accent-start, $accent-end);
+}
 .cs_footer.cs_style_2.cs_type_1 {
   .cs_footer_bottom {
     border: none;
     padding: 16px 0;
-    background: linear-gradient(119deg, #d2eaef 17.16%, #86bbf1 89.78%);
+    background: linear-gradient(to right, $accent-start, $accent-end);
   }
   .cs_copyright {
-    color: $primary;
+    color: $white;
   }
 }

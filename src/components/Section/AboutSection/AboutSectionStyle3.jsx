@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionHeading from '../../SectionHeading';
 import Spacing from '../../Spacing';
+import { about } from '../../../assets/allAssets';
 
 export default function AboutSectionStyle3({
   titleUp,
@@ -9,7 +10,7 @@ export default function AboutSectionStyle3({
   imgUrl,
 }) {
   return (
-    <div className="cs_about cs_style_2 cs_shape_wrap">
+    <div id='about' className="cs_about cs_style_2 cs_shape_wrap">
       <div className="cs_shape_3">
         <svg
           width={738}
@@ -44,11 +45,11 @@ export default function AboutSectionStyle3({
           <div className="col-xl-6">
             <SectionHeading titleUp={titleUp} title={title} />
             <Spacing md="85" xl="40" lg="30" />
-            <p className="m-0">{subTitle}</p>
+            <p className="m-0 para_color">{subTitle}</p>
           </div>
           <div className="col-xl-6">
             <div className="cs_about_img">
-              <img src={imgUrl} alt="About" className="cs_radius_30 w-100" />
+              <img src={about} alt="About" className="cs_radius_30 w-100" />
             </div>
           </div>
         </div>
