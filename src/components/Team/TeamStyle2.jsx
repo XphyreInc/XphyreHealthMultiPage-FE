@@ -18,9 +18,6 @@ export default function TeamStyle2({
           <h3 className="cs_member_name cs_fs_32">
             <Link to={href}>{name}</Link>
           </h3>
-          <p className="cs_member_designation cs_heading_color cs_medium">
-            {designation}
-          </p>
           <p className="cs_member_description">{description}</p>
         </div>
       </div>

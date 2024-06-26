@@ -3,6 +3,7 @@ import Layout from './Layout';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import CredentialingAndContractingServices from './Pages/CredentialingAndContractingServices';
+import InsuranceEligibilityVerificationServices from './Pages/InsuranceEligibilityVerificationServices';
 import Appointments from './Pages/Appointments';
 import Contact from './Pages/Contact';
 import { useEffect } from 'react';
@@ -20,6 +21,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="C&C" element={<CredentialingAndContractingServices />} />
+        <Route path="IEVS" element={<InsuranceEligibilityVerificationServices />} />
         <Route path="appointments" element={<Appointments />} />
         <Route path="contact" element={<Contact />} />
       </Route>

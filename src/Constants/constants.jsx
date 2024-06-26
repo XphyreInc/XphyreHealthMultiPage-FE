@@ -149,35 +149,23 @@ export const departmentData = [
     },
 ];
 
-export const featureListData = [
+export const WhyUsData = [
     {
         iconUrl: compassion,
-        title: 'Daily Claims Submission and Follow Up',
+        title: 'Unmatched Expertise',
         subTitle:
-            'We specialize in prompt and accurate claims submission to insurance providers daily. Our dedicated team ensures that claims are processed swiftly and efficiently. We also conduct thorough follow-up to track the status of submitted claims, addressing any issues promptly to expedite reimbursement.',
+            'Fostering organic client relations and maximizing reimbursements requires intimate knowledge of credentialing and contracting. Our certified and experienced specialists at Xphyre Health understand the ins and outs of contracts and negotiations.Thus, our experts empower you to deliver exceptional healthcare services while maximizing revenue.',
     },
     {
         iconUrl: compassion,
-        title: '  Patient Billing & Balance Reminder Call',
+        title: 'Personalized Service',
         subTitle:
-            'Our Patient Billing service manages the invoicing and collection process for patient balances. We send out clear and concise statements to patients, making it easy for them to understand their financial responsibilities. Additionally, our team conducts balance reminder calls to assist patients in resolving outstanding balances',
+            `Xphyre Health believes that no two healthcare clinics are similar, so we offer customized solutions to meet your unique needs. Our dedicated staff of trained medical revenue management experts work closely with your team, providing regular updates and personalized support.What's more? We utilize the latest technology to mitigate the risk of costly errors while enhancing your turnaround times.`,
     },
     {
         iconUrl: compassion,
-        title: ' Payments and adjustments',
-        subTitle: `We handle all aspects of payment processing and adjustments on your behalf. This includes posting payments accurately, applying adjustments according to contractual agreements, and maintaining detailed records of financial transactions for accurate accounting.`,
-    },
-    {
-        iconUrl: compassion,
-        title: 'Rejection, Denials and Appeals Management',
-        subTitle:
-            'Our experts excel in managing claim rejections and denials effectively. We investigate the reasons for denials, correct errors promptly, and prepare comprehensive appeals when necessary. By leveraging our expertise, we maximize your revenue by reducing claim rejections and optimizing reimbursement.',
-    },
-    {
-        iconUrl: compassion,
-        title: 'Primary, secondary and tertiary payers claim processing',
-        subTitle:
-            'Our experts excel in managing claim rejections and denials effectively. We investigate the reasons for denials, correct errors promptly, and prepare comprehensive appeals when necessary. By leveraging our expertise, we maximize your revenue by reducing claim rejections and optimizing reimbursement.',
+        title: 'Your Pathway to Simplicity: How to Get Started with Xphyre Health',
+        subTitle: `Empower your practice with top-tier credentialing and contracting services by partnering with Xphyre Health today! By reaching out, you can learn more about how we help you navigate credentialing and contracting challenges.`,
     },
 ];
 
@@ -215,31 +203,105 @@ export const brandData = [
 
 export const testimonialData = [
     {
-      text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
-      ratingNumber: '5',
-      avatarImgUrl: '/images/home_1/avatar_2.png',
-      avatarName: 'PAULO HUBERT',
-      avatarDesignation: 'New York, USA',
+        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+        ratingNumber: '5',
+        avatarImgUrl: '/images/home_1/avatar_2.png',
+        avatarName: 'PAULO HUBERT',
+        avatarDesignation: 'New York, USA',
     },
     {
-      text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
-      ratingNumber: '4.5',
-      avatarImgUrl: '/images/home_1/avatar_2.png',
-      avatarName: 'PAULO HUBERT',
-      avatarDesignation: 'New York, USA',
+        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+        ratingNumber: '4.5',
+        avatarImgUrl: '/images/home_1/avatar_2.png',
+        avatarName: 'PAULO HUBERT',
+        avatarDesignation: 'New York, USA',
     },
     {
-      text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
-      ratingNumber: '5',
-      avatarImgUrl: '/images/home_1/avatar_2.png',
-      avatarName: 'PAULO HUBERT',
-      avatarDesignation: 'New York, USA',
+        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+        ratingNumber: '5',
+        avatarImgUrl: '/images/home_1/avatar_2.png',
+        avatarName: 'PAULO HUBERT',
+        avatarDesignation: 'New York, USA',
     },
     {
-      text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
-      ratingNumber: '4.5',
-      avatarImgUrl: '/images/home_1/avatar_2.png',
-      avatarName: 'PAULO HUBERT',
-      avatarDesignation: 'New York, USA',
+        text: 'I recently had to bring my child to ProHealth for a minor injury, and I was so impressed with the care he received. The pediatrician was great with him and made him feel at ease, and the entire staff was kind and attentive.”',
+        ratingNumber: '4.5',
+        avatarImgUrl: '/images/home_1/avatar_2.png',
+        avatarName: 'PAULO HUBERT',
+        avatarDesignation: 'New York, USA',
     },
-  ];
+];
+
+
+export const C_and_C_Data = [
+    {
+        name: 'Lasting Client Relationships',
+        description:
+            `Personalized contracting and credentialing services can help prevent denials and errors, optimizing your healthcare practice's revenue cycle and financial health. With expert revenue management specialists, you can unlock the best rates and terms on insurance contracts.
+            Furthermore, proficient outsourced contracting solutions empower you to strengthen customer relations, ensuring improved patient care and revenue stream.`
+    },
+    {
+        name: 'Cost-Effective Solutions',
+        description:
+            `Credentialing and contracting are vital yet daunting tasks, requiring error-free information and expert negotiation to avoid out-of-pocket payments. Hiring an in-house team can be costly and time-consuming as you spend thousands on training, software, and specialized technicians.
+            In contrast, an outsourced medical revenue management team can help solve all your credentials, contracts, and other billing-related challenges. The result? You can discover the best reimbursement rates and compensations while saving thousands!`
+    },
+    {
+        name: 'Minimize Errors and Denials',
+        description:
+            `Eliminate the risk of costly errors and denials damaging your healthcare clinic's revenue cycle by outsourcing expert credentialing and contracting errors. With trained, reliable specialists, you won't have to worry about staying updated with the latest regulations and compliances.
+            What's more, your expert staff can focus on providing top-notch healthcare services while the contract specialists streamline the negotiation and verification process!`
+    },
+
+
+];
+
+export const IEVSData1 = [
+    {
+        title: 'Enhance Your Cash Flow',
+        description:
+            `Manual insurance eligibility and verification can be time-consuming and frustrating, increasing the risk of errors and overlooked details. Working with insurance eligibility specialists ensures all patient data is verified and up-to-date.
+            As a result, healthcare firms can alleviate the risk of claim denials and payment delays and maintain a consistent cash flow.`
+    },
+    {
+        title: 'Create a Seamless Workflow',
+        description:
+            `Outsourcing eligibility verification empowers your healthcare practice to enhance efficiency and productivity, streamlining your authorization and verification processes. In addition, it empowers your staff to focus on priority tasks, such as patient care, rather than time-consuming administrative tasks.
+            The result? The verification specialists manage the eligibility process, ensuring accuracy and improved customer satisfaction.`
+    },
+    {
+        title: 'Increase Your Revenue ',
+        description:
+            `Partnering with a reliable, experienced insurance eligibility verification company lets you pinpoint and resolve issues before they hurt your revenue. Expert verification specialists minimize denials and delays by identifying missing or incorrect data and ensuring compliance.
+            Thus, outsourcing authorization and verification services offer your practice access to zero-error verifications, rapid turnarounds, and increased cash flow!`
+    },
+
+
+];
+
+export const IEVSdata2 = [
+    {
+        title: 'Trained and Experienced',
+        description:
+            `With over a decade of experience and intimate knowledge of insurance eligibility, Xphyre Health's specialists deliver high-speed verification solutions. Our accurate patient data, zero missing details, and timely submissions empower your staff to clear medical claims more efficiently.
+            What's more? We leverage our expertise to deliver precise insurance coverage checks and prevent delays, saving time and costs.`
+    },
+    {
+        title: 'Access to Advanced Technology',
+        description:
+            `Our expert authorization and verification technicians at Xphyre Health utilize cutting-edge technology to streamline insurance eligibility verification. With automated workflows and extensive patient data, we ensure efficiency and transparency at every step.
+            As a result, our dedicated specialists allow your staff to focus on priority tasks and enhance patient satisfaction.`
+    },
+    {
+        title: 'Boost Your Financial Health',
+        description:
+            `Our certified and trained verification specialists focus on minimizing denials and reimbursements, helping streamline your practice's cash flow. So, with Xphyre Health's verification services, medical facilities can boost their revenue, one coverage at a time!`
+    },
+    {
+        title: 'Enjoy Dedicated Support',
+        description:
+            `Xphyre Health's cheerful and knowledgeable customer service team provides reliable, long-term support and guidance. Whether you've got a concern or a query, we're only a click away. `
+    },
+]
+
+

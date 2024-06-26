@@ -60,7 +60,7 @@ export default function Navbar({ variant }) {
                             <Link to="/C&C">Credentialing and Contracting Services</Link>
                           </li>
                           <li>
-                            <Link to="/departments">Insurance Eligibility Verification Services</Link>
+                            <Link to="/IEVS">Insurance Eligibility Verification Services</Link>
                           </li>
                           <li>
                             <Link to="/departments/department-details">

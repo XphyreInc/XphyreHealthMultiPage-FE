@@ -3,30 +3,41 @@ import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSecti
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
 import TeamSectionStyle2 from '../components/Section/TeamSection/TeamSectionStyle2';
 import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
+import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
-import { C_and_C_Data } from '../Constants/constants';
+import { IEVSData1 } from '../Constants/constants';
+import { IEVSdata2 } from '../Constants/constants';
 import { WhyUsData } from '../Constants/constants';
 
 
-export default function CredentialingAndContractingServices() {
-  pageTitle('C&C');
+export default function InsuranceEligibilityVerificationServices() {
+  pageTitle('IEVS');
   return (
     <>
       <BannerSectionStyle5
         bgUrl="/images/doctors/banner_bg.svg"
         imgUrl="/images/doctors/banner_img.png"
-        title="Credentialing and Contracting Services"
+        title="Insurance Eligibility Verification Services"
         subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
       />
-      <Section topMd={65} bottomMd={200} bottomLg={150} bottomXl={110}>
-        <TeamSectionStyle2 data={C_and_C_Data} />
+      <Section topMd={200} topLg={150} topXl={110}>
+        <DepartmentSectionStyle2
+          sectionTitle="Enhance Your Practice"
+          data={IEVSData1}
+        />
       </Section>
       <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
         <FeaturesSectionStyle2
           sectionTitle="Why Choose Us"
           imgUrl="images/about/why_choose_us.jpeg"
           data={WhyUsData}
+        />
+      </Section>
+      <Section topMd={200} topLg={150} topXl={110}>
+        <DepartmentSectionStyle2
+          sectionTitle="Optimize Cash Flow"
+          data={IEVSdata2}
         />
       </Section>
       <Section className="cs_footer_margin_0">
