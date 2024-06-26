@@ -1,14 +1,14 @@
 import React from 'react';
-import BannerSectionStyle3 from '../Section/BannerSection/BannerSectionStyle3';
-import BannerSectionStyle4 from '../Section/BannerSection/BannerSectionStyle4';
-import Section from '../Section';
-import DepartmentSectionStyle2 from '../Section/DepartmentSection/DepartmentSectionStyle2';
-import FeaturesSectionStyle2 from '../Section/FeaturesSection/FeaturesSectionStyle2';
-import FunFactSection from '../Section/FunFactSection';
-import TeamSection from '../Section/TeamSection';
-import GallerySection from '../Section/GallerySection';
-import AwardSectionStyle2 from '../Section/AwardSection/AwardSectionStyle2';
-import { pageTitle } from '../../helpers/PageTitle';
+import BannerSectionStyle3 from '../components/Section/BannerSection/BannerSectionStyle3';
+import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
+import Section from '../components/Section';
+import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
+import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
+import FunFactSection from '../components/Section/FunFactSection';
+import TeamSection from '../components/Section/TeamSection';
+import GallerySection from '../components/Section/GallerySection';
+import AwardSectionStyle2 from '../components/Section/AwardSection/AwardSectionStyle2';
+import { pageTitle } from '../helpers/PageTitle';
 const departmentData = [
   {
     title: 'Diagnostic testing',

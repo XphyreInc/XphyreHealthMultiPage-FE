@@ -1,8 +1,8 @@
 import React from 'react';
-import SectionHeading from '../SectionHeading';
-import Spacing from '../Spacing';
-import Button from '../Button';
-import { pageTitle } from '../../helpers/PageTitle';
+import SectionHeading from '../components/SectionHeading';
+import Spacing from '../components/Spacing';
+import Button from '../components/Button';
+import { pageTitle } from '../helpers/PageTitle';
 
 export default function ErrorPage() {
   pageTitle('Error');

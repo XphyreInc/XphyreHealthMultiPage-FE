@@ -1,16 +1,16 @@
 import React from 'react';
-import HeroSection from '../Hero/HeroSection';
-import Section from '../Section';
-import AboutSectionStyle3 from '../Section/AboutSection/AboutSectionStyle3';
-import DepartmentSectionStyle4 from '../Section/DepartmentSection/DepartmentSectionStyle4';
-import TestimonialSectionStyle2 from '../Section/TestimonialSection/TestimonialSectionStyle2';
-import WorkingProcess from '../Section/WorkingProcess';
-import BannerSectionStyle2 from '../Section/BannerSection/BannerSectionStyle2';
-import BlogSectionStyle3 from '../Section/BlogSection/BlogSectionStyle3';
-import FaqSectionStyle2 from '../Section/FaqSection/FaqSectionStyle2';
-import AppointmentSectionStyle2 from '../Section/AppointmentSection/AppointmentSectionStyle2';
-import BrandsSectionStyle2 from '../Section/BrandsSection/BrandsSectionStyle2';
-import { pageTitle } from '../../helpers/PageTitle';
+import HeroSection from '../components/Hero/HeroSection';
+import Section from '../components/Section';
+import AboutSectionStyle3 from '../components/Section/AboutSection/AboutSectionStyle3';
+import DepartmentSectionStyle4 from '../components/Section/DepartmentSection/DepartmentSectionStyle4';
+import TestimonialSectionStyle2 from '../components/Section/TestimonialSection/TestimonialSectionStyle2';
+import WorkingProcess from '../components/Section/WorkingProcess';
+import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
+import BlogSectionStyle3 from '../components/Section/BlogSection/BlogSectionStyle3';
+import FaqSectionStyle2 from '../components/Section/FaqSection/FaqSectionStyle2';
+import AppointmentSectionStyle2 from '../components/Section/AppointmentSection/AppointmentSectionStyle2';
+import BrandsSectionStyle2 from '../components/Section/BrandsSection/BrandsSectionStyle2';
+import { pageTitle } from '../helpers/PageTitle';
 
 export default function HomeStyle2() {
   pageTitle('Home V2');

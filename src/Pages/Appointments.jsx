@@ -1,8 +1,8 @@
 import React from 'react';
-import BannerSectionStyle3 from '../Section/BannerSection/BannerSectionStyle3';
-import AppointmentWithContactInfoSection from '../Section/AppointmentWithContactInfoSection';
-import Section from '../Section';
-import { pageTitle } from '../../helpers/PageTitle';
+import BannerSectionStyle3 from '../components/Section/BannerSection/BannerSectionStyle3';
+import AppointmentWithContactInfoSection from '../components/Section/AppointmentWithContactInfoSection';
+import Section from '../components/Section';
+import { pageTitle } from '../helpers/PageTitle';
 
 export default function Appointments() {
   pageTitle('Appointments');

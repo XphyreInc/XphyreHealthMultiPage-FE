@@ -1,9 +1,9 @@
 import React from 'react';
-import BannerSectionStyle5 from '../Section/BannerSection/BannerSectionStyle5';
-import BannerSectionStyle4 from '../Section/BannerSection/BannerSectionStyle4';
-import TeamSectionStyle2 from '../Section/TeamSection/TeamSectionStyle2';
-import Section from '../Section';
-import { pageTitle } from '../../helpers/PageTitle';
+import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
+import TeamSectionStyle2 from '../components/Section/TeamSection/TeamSectionStyle2';
+import Section from '../components/Section';
+import { pageTitle } from '../helpers/PageTitle';
 const teamData = [
   {
     imgUrl: '/images/doctors/doctor_1.png',
@@ -187,8 +187,8 @@ const teamData = [
   },
 ];
 
-export default function Doctors() {
-  pageTitle('Doctors');
+export default function CredentialingAndContractingServices() {
+  pageTitle('C&C');
   return (
     <>
       <BannerSectionStyle5

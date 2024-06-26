@@ -1,9 +1,9 @@
 import React from 'react';
-import BannerSectionStyle5 from '../Section/BannerSection/BannerSectionStyle5';
-import ContactForm from '../ContactForm';
-import Section from '../Section';
-import ContactInfoSection from '../Section/ContactInfoSection';
-import { pageTitle } from '../../helpers/PageTitle';
+import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import ContactForm from '../components/ContactForm';
+import Section from '../components/Section';
+import ContactInfoSection from '../components/Section/ContactInfoSection';
+import { pageTitle } from '../helpers/PageTitle';
 
 export default function Contact() {
   pageTitle('Contact');
