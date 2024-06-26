@@ -1,20 +1,17 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Layout from './Layout';
-import Home from './components/Pages/Home';
-import About from './components/Pages/About';
-import Doctors from './components/Pages/Doctors';
-import Blog from './components/Pages/Blog';
-import Appointments from './components/Pages/Appointments';
-import Departments from './components/Pages/Departments';
-import DepartmentDetails from './components/Pages/DepartmentDetails';
-import BlogDetails from './components/Pages/BlogDetails';
-import DoctorDetails from './components/Pages/DoctorDetails';
-import PricingPlan from './components/Pages/PricingPlan';
-import Gallery from './components/Pages/Gallery';
-import Timetable from './components/Pages/Timetable';
-import Contact from './components/Pages/Contact';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import CredentialingAndContractingServices from './Pages/CredentialingAndContractingServices';
+import Appointments from './Pages/Appointments';
+import Departments from './Pages/Departments';
+import DepartmentDetails from './Pages/DepartmentDetails';
+import PricingPlan from './Pages/PricingPlan';
+import Gallery from './Pages/Gallery';
+import Timetable from './Pages/Timetable';
+import Contact from './Pages/Contact';
 import { useEffect } from 'react';
-import ErrorPage from './components/Pages/ErrorPage';
+import ErrorPage from './Pages/ErrorPage';
 
 function App() {
   const { pathname } = useLocation();
@@ -27,10 +24,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="doctors" element={<Doctors />} />
-        <Route path="doctors/:doctorId" element={<DoctorDetails />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="blog/:blogId" element={<BlogDetails />} />
+        <Route path="C&C" element={<CredentialingAndContractingServices />} />
         <Route path="appointments" element={<Appointments />} />
         <Route path="departments" element={<Departments />} />
         <Route

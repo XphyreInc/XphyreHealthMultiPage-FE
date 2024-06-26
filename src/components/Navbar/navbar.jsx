@@ -57,7 +57,7 @@ export default function Navbar({ variant }) {
                       <DropDown>
                         <ul className='nav-dropdown' style={{width: "23rem" }}>
                           <li>
-                            <Link to="/appointments">Credentialing and Contracting Services</Link>
+                            <Link to="/C&C">Credentialing and Contracting Services</Link>
                           </li>
                           <li>
                             <Link to="/departments">Insurance Eligibility Verification Services</Link>
