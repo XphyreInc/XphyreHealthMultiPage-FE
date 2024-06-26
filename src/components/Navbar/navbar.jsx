@@ -42,9 +42,8 @@ export default function Navbar({ variant }) {
                 </div>
                 <nav className="cs_nav">
                   <ul
-                    className={`${
-                      mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
-                    }`}
+                    className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
+                      }`}
                   >
                     <li className="">
                       <Link to="/">Home</Link>
@@ -52,43 +51,62 @@ export default function Navbar({ variant }) {
                     <li>
                       <Link to="/about">Our Processes </Link>
                     </li>
-                    <li>
-                      <Link to="/doctors">Our Solutions</Link>
-                    </li>
+
                     <li className="menu-item-has-children">
-                      <Link to="/">Our Services</Link>
+                      <Link to="#">Our Services</Link>
                       <DropDown>
-                        <ul>
+                        <ul className='nav-dropdown' style={{width: "23rem" }}>
                           <li>
-                            <Link to="/appointments">Appointments</Link>
+                            <Link to="/appointments">Credentialing and Contracting Services</Link>
                           </li>
                           <li>
-                            <Link to="/departments">Departments</Link>
+                            <Link to="/departments">Insurance Eligibility Verification Services</Link>
                           </li>
                           <li>
                             <Link to="/departments/department-details">
-                              Department Details
+                              Chart Auditing
                             </Link>
                           </li>
                           <li>
-                            <Link to="/doctors">Doctors</Link>
+                            <Link to="/doctors">Medical Accounts Receivable Services</Link>
                           </li>
                           <li>
                             <Link to="doctors/doctor-details">
-                              Doctor Details
+                              Medical Billing and Coding Services
                             </Link>
                           </li>
                           <li>
-                            <Link to="/pricing-plan">Pricing Plan</Link>
+                            <Link to="/pricing-plan">Medical IT Equipment and Services</Link>
                           </li>
                           <li>
-                            <Link to="/gallery">Gallery</Link>
+                            <Link to="/gallery">Out of Networking Negotiation Services</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Timetable</Link>
+                            <Link to="/timetable">Patient Billing Services</Link>
+                          </li>
+                          <li>
+                            <Link to="/timetable">Prior and Retro Authorization Services</Link>
+                          </li>
+                          <li>
+                            <Link to="/timetable">Clinics and Imaging Centers</Link>
+                          </li>
+                          <li>
+                            <Link to="/timetable">Emergency Rooms</Link>
+                          </li>
+                          <li>
+                            <Link to="/timetable">Healthcare Systems</Link>
+                          </li>
+                          <li>
+                            <Link to="/timetable">Hospitals</Link>
+                          </li>
+                          <li>
+                            <Link to="/timetable">Urgent Care</Link>
                           </li>
                         </ul>
                       </DropDown>
+                    </li>
+                    <li>
+                      <Link to="/doctors">Our Solutions</Link>
                     </li>
                     <li>
                       <Link to="/contact">Contact Us</Link>
