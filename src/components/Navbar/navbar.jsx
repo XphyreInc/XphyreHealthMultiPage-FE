@@ -55,7 +55,7 @@ export default function Navbar({ variant }) {
                     <li className="menu-item-has-children">
                       <Link to="#">Our Services</Link>
                       <DropDown>
-                        <ul className='nav-dropdown' style={{width: "23rem" }}>
+                        <ul className='nav-dropdown' style={{ width: "23rem" }}>
                           <li>
                             <Link to="/C&C">Credentialing and Contracting Services</Link>
                           </li>
@@ -63,17 +63,13 @@ export default function Navbar({ variant }) {
                             <Link to="/IEVS">Insurance Eligibility Verification Services</Link>
                           </li>
                           <li>
-                            <Link to="/departments/department-details">
-                              Chart Auditing
-                            </Link>
+                            <Link to="/CA">Chart Auditing</Link>
                           </li>
                           <li>
-                            <Link to="/doctors">Medical Accounts Receivable Services</Link>
+                            <Link to="/MARS">Medical Accounts Receivable Services</Link>
                           </li>
                           <li>
-                            <Link to="doctors/doctor-details">
-                              Medical Billing and Coding Services
-                            </Link>
+                            <Link to="MB&CS">Medical Billing and Coding Services</Link>
                           </li>
                           <li>
                             <Link to="/pricing-plan">Medical IT Equipment and Services</Link>

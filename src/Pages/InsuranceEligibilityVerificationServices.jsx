@@ -1,7 +1,6 @@
 import React from 'react';
 import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
-import TeamSectionStyle2 from '../components/Section/TeamSection/TeamSectionStyle2';
 import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import Section from '../components/Section';
