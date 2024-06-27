@@ -3126,7 +3126,7 @@ a.ui-button:active,
 .cs_iconbox_subtitle {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  // white-space: nowrap;
   transition: all 1s ease;
   text-align: justify;
 }
