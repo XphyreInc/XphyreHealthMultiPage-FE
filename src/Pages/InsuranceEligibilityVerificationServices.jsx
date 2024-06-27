@@ -26,24 +26,17 @@ export default function InsuranceEligibilityVerificationServices() {
           data={IEVSData1}
         />
       </Section>
-      <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
-        <FeaturesSectionStyle2
-          sectionTitle="Why Choose Us"
-          imgUrl="images/about/why_choose_us.jpeg"
-          data={WhyUsData}
+      <Section className="cs_footer_margin_0">
+        <BannerSectionStyle4
+          bgUrl="images/doctors/banner_bg_2.jpeg"
+          title="Why Us?"
+          subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
         />
       </Section>
       <Section topMd={200} topLg={150} topXl={110}>
         <DepartmentSectionStyle2
           sectionTitle="Optimize Cash Flow"
           data={IEVSdata2}
-        />
-      </Section>
-      <Section className="cs_footer_margin_0">
-        <BannerSectionStyle4
-          bgUrl="images/doctors/banner_bg_2.jpeg"
-          title="Why Us?"
-          subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
         />
       </Section>
     </>
