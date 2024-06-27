@@ -1,13 +1,12 @@
 import React from 'react';
 import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
-import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
 import { IEVSData1 } from '../Constants/constants';
 import { IEVSdata2 } from '../Constants/constants';
-import { WhyUsData } from '../Constants/constants';
+
 
 
 export default function InsuranceEligibilityVerificationServices() {
