@@ -72,16 +72,16 @@ export default function Navbar({ variant }) {
                             <Link to="MB&CS">Medical Billing and Coding Services</Link>
                           </li>
                           <li>
-                            <Link to="/pricing-plan">Medical IT Equipment and Services</Link>
+                            <Link to="/MIEAS">Medical IT Equipment and Services</Link>
                           </li>
                           <li>
-                            <Link to="/gallery">Out of Networking Negotiation Services</Link>
+                            <Link to="/OONNS">Out of Networking Negotiation Services</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Patient Billing Services</Link>
+                            <Link to="/PBS">Patient Billing Services</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Prior and Retro Authorization Services</Link>
+                            <Link to="/PARAS">Prior and Retro Authorization Services</Link>
                           </li>
                           <li>
                             <Link to="/timetable">Clinics and Imaging Centers</Link>

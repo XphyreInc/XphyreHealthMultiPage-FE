@@ -475,3 +475,447 @@ export const MBCSdata2 = [
 ];
 
 
+// Medical IT Equipment and Services
+
+export const MIEASdata1 = [
+    {
+        title: 'Enjoy Cost Savings',
+        description:
+            `Outsourcing IT equipment and services can help medical facilities save on purchasing, maintaining, and upgrading technology. By partnering with a third-party IT equipment and service provider, healthcare practices can avoid the high cost of hiring and training in-house IT teams.
+            So, with a reliable medical IT team, you can unlock expert services at a fraction of the cost, allowing you to allocate essential resources to other critical healthcare    areas.`
+    },
+    {
+        title: 'Focus on Core Business',
+        description:
+            `Managing IT in-house can be time-consuming, distracting your team from focusing on core business activities. Partnering with an IT equipment and service provider lets your medical staff concentrate on what they do best- providing quality patient care.
+            By entrusting your IT needs to a dedicated provider, you can ensure your technology issues don't hinder your progress, driving business growth and providing you a competitive edge.`
+    },
+    {
+        title: 'Unlock Scalability',
+        description:
+            `Outsourcing IT equipment and services solutions allows healthcare clinics to scale resources based on their growing needs. With third-party IT services, your healthcare clinic can adapt to new requirements quickly and efficiently.
+            Besides, expert IT service providers stay informed about regulatory changes, ensuring your business complies with relevant laws and standards.`
+    }
+];
+
+export const MIEASdata2 = [
+    {
+        title: 'Experience and Expertise',
+        description:
+            `Gain access to Xphyre Health's knowledgeable and skilled staff, ensuring top-notch service and dedicated support. With over a decade of experience, our `
+    },
+    {
+        title: 'Customer-Centric Approach ',
+        description:
+            `At Xphyre Health, we prioritize our client's needs, delivering customized solutions and exceptional customer service to ensure satisfaction.`
+    },
+    {
+        title: 'Reliable and Trustworthiness',
+        description:
+            `Our commitment to reliability and excellence means you can count on us for timely and effective IT support. 
+            Our expert medical IT team also provides top-notch equipment, empowering efficiency and growth.`
+    },
+    {
+        title: 'Dedicated Customer Support',
+        description:
+            `Our cheerful and knowledgeable customer support team answers all your queries and concerns to ensure a smooth IT experience.`
+    },
+];
+
+// Out of Networking Negotiation Services
+
+export const OONNSdata1 = [
+    {
+        title: 'Streamline Your Operations',
+        description:
+            `Negotiating out-of-network claims can be tricky, particularly if you're unfamiliar with industry terminology and strategies. Partnering with reliable, proficient out-of-network specialists allows you to focus on core clinical activities while expert negotiators uncover exciting savings.
+T           he expert out-of-network negotiators will negotiate each claim on your and your patient's behalf, empowering you with exceptional compensation and saved costs!`
+    },
+    {
+        title: 'Increase Your Revenue',
+        description:
+            `Handling negotiation tasks on top of clinical care can limit your ability to deliver quality patient care, leading to poor satisfaction rates and missed saving opportunities. Leveraging top-notch out-of-network negotiation services lets you focus on priority tasks and amplify your reimbursement rates.
+            So, working with a specialized team with a deep understanding of payer policies can help you achieve the best possible outcomes, enhancing your bottom line.`
+    },
+    {
+        title: 'Amplify Your Reimbursement',
+        description:
+            `When you partner with financial and clinical negotiation expertise, you can significantly increase your out-of-network savings. Your out-of-network experts will analyze historical patient data to negotiate, pinpoint underpaid claims, and determine ways to optimize your savings.
+            With certified out-of-network specialists, you won't have to worry about compiling and comparing tons of patient data to calculate the best reimbursements. Instead, the experts will use the latest technology to ensure real savings!`
+    },
+];
+
+export const OONNSdata2 = [
+    {
+        title: 'Trained and Expertise',
+        description:
+            `Navigating the intricacies of out-of-network billing requires up-to-date knowledge of regulations and payer requirements. Our specialists stay up-to-date with industry changes and policies., ensuring your practice remains compliant. 
+            What's more, our proficient technicians boast a decade of experience in medical billing and negotiation. Our proven track record and intimate knowledge of out-of-network negotiation tactics ensure you enjoy unmatched savings.`
+    },
+    {
+        title: 'Personalized Services',
+        description:
+            `At Xphyre Health, we believe there is no one-size-fits-all solution to out-of-network negotiation. So, our dedicated account managers work closely with you, offering customized solutions that match your unique needs and challenges.`
+    },
+    {
+        title: 'Dedicated Support',
+        description:
+            `Whether you have a question or need help settling an out-of-network claim, our cheerful and knowledgeable staff has your back. Our proficient support team offers timely and reliable guidance, answering all queries and providing peace of mind.`
+    },
+];
+
+// Patient Billing Services
+
+export const PBSdata1 = [
+    {
+        title: 'Increase Your Revenue',
+        description:
+            `Outsourcing quality patient billing services allows healthcare facilities to streamline patient care and flow, resulting in higher reimbursement rates. With expert billing specialists to answer billing questions and create up-to-date invoices, your patients can enjoy uninterrupted, professional assistance.
+            Thus, third-party patient billers and coders can significantly increase your practice's cash flow and financial stability.`
+    },
+    {
+        title: 'Reduce Your Administrative Burden',
+        description:
+            `Are you overwhelmed with patient billing tasks and new patients? Outsourcing top-notch, reliable billing solutions lets your staff focus on core business services—patient care.
+            What's more, partnering with expert patient billers and coders minimizes workplace stress and improves workplace efficiency and productivity.`
+    },
+    {
+        title: 'Enhance Accuracy and Compliance',
+        description:
+            `Working with professional billing and coding services ensures accuracy and compliance with the latest healthcare regulations, minimizing errors and reducing lost revenue. 
+            Besides this, you won't have to ever worry about outdated customer data or incomplete claim submissions again!`
+    },
+    {
+        title: 'Access to Expertise ',
+        description:
+            `Benefit from the expertise of billing professionals who stay updated with industry changes to manage your billing process efficiently. 
+            We have expert patients, medical billers, and coders knowledge and cutting-edge technology to boost your healthcare facility's success!`
+    },
+];
+
+export const PBSdata2 = [
+    {
+        title: 'Decade of Experience',
+        description:
+            `With years of experience in the medical billing industry, our expert team has the knowledge and skills to manage your billing process precisely. `
+    },
+    {
+        title: 'Innovative Technology',
+        description:
+            `We utilize cutting-edge billing software and technology to streamline the billing and coding process, ensuring accuracy and efficiency.`
+    },
+    {
+        title: 'Simplify Your Billing Process ',
+        description:
+            `Connect with Xphyre Health's expert patient billing specialists to identify areas for improvement. Our proficient technicians develop tailored billing and coding solutions that align with your healthcare practice's unique needs and goals.`
+    },
+];
+
+// Prior and Retro Authorization Services
+
+export const PARASdata1 = [
+    {
+        title: 'Boost Efficiency',
+        description:
+            `The prior and retro-authorization processes can be lengthy, time-consuming, and downright frustrating, reducing workplace efficiency. Outsourcing these services to a reliable, experienced pre- and retro-authorization company helps shoulder the burden of administrative and management tasks.
+            Thus, your healthcare staff can concentrate on patient care while the trained authorization specialists handle timely certifications, submissions, and verifications.`
+    },
+    {
+        title: `Enhance Your Practice's Cash Flow`,
+        description:
+            `Managing the prior authorization processes while staying up-to-date with the latest regulations can be stressful for healthcare clinics. A tiny error or late submission can result in unpaid claims, poor compensation, or lost revenue.
+            Partnering with a trustworthy medical authorization company helps eliminate claim denials and delays, ensuring a steady flow of reimbursements. The result? Improved productivity and enhanced financial health!`
+    },
+    {
+        title: 'Navigate Authorization with Experts',
+        description:
+            `From staying updated with the latest HIPAA-compliant to creating strong appeals, prior and retro-authorization processes can be demanding. Working with a trained, experienced medical authorization team ensures you never have to worry about changing regulations and payer requirements again.
+            Furthermore, outsourcing authorization tasks allows you to minimize errors and denials and maximize approval rates and revenue.`
+    },
+];
+
+export const PARASdata2 = [
+    {
+        title: 'Discover Hassle-Free Claim Settlements',
+        description:
+            `Take your healthcare facility's efficiency and productivity to the next level with Xphyre Health's reliable authorization management solutions. Our exhaustive prior and retro-authorization services cover the entire process, from data collection to approval.
+            As a result, our certified and trained authorization specialists alleviate the risk of denials and maximize your reimbursements.`
+    },
+    {
+        title: 'Ensure Accuracy and Compliance',
+        description:
+            `Partnering with Xphyre Health's experienced and knowledgeable pre- and retro-authorization specialists ensures HIPAA compliance when submitting claims, billing, and verifying. In addition, we monitor patient data to avoid potential errors and denials.  
+            This way, your healthcare practice enjoys a more streamlined billing and authorization system, enhancing workplace efficiency.`
+    },
+    {
+        title: 'Enjoy Dedicated Customer Support',
+        description:
+            `Whether your staff needs assistance submitting claims or has a billing query, our friendly and experienced support team covers you. We'll address all your concerns to ensure your peace of mind! `
+    },
+];
+
+
+
+// Clinics and Imaging Centers
+export const CAICdata = [
+    {
+        title: 'Medical Billing and Coding',
+        description:
+            `Our expert billing and coding specialists offer accurate and timely billing, minimizing errors and late submissions to reduce claim denials and delays.`
+    },
+    {
+        title: 'Medical Accounts Receivable',
+        description:
+            `Leverage our tailored medical AR services to ensure timely follow-up and payment collections, enhancing cash flow and ensuring satisfied clients.`
+    },
+    {
+        title: 'Credentialing and Contracting',
+        description:
+            `Foster organic, long-lasting insurer and customer relationships with our reliable credentialing and contracting services! `
+    },
+    {
+        title: 'Out of Network Negotiation',
+        description:
+            `Negotiate favorable terms with out-of-network providers to secure optimal reimbursement rates and avoid paying out-of-pocket expenses.`
+    },
+    {
+        title: 'Prior and Retro Authorization',
+        description:
+            `Ensure you never have to worry about claim denials with our dedicated prior and retro authorizations, ensuring timely and accurate approvals.`
+    },
+    {
+        title: 'Insurance Eligibility Verification',
+        description:
+            `Enhance customer satisfaction and patient care with Xphyre Health's reliable insurance eligibility verification specialists.`
+    },
+    {
+        title: 'Comprehensive Chart Auditing',
+        description:
+            `Keep your clinic up-to-date with the latest healthcare regulations with our exceptional chart auditing and DRG review services.`
+    },
+    {
+        title: 'IT Equipment and Services',
+        description:
+            `Take your clinic's efficiency and patient satisfaction up a notch with our high-quality IT equipment and services solutions!`
+    },
+];
+
+// Emergency Rooms
+export const ERdata = [
+    {
+        title: 'Medical Billing and Coding',
+        description:
+            `Partner with our skilled team to enjoy precise and timely billing and coding, minimizing errors and maximizing reimbursements.`
+    },
+    {
+        title: 'Medical Accounts Receivable',
+        description:
+            `Our certified team of dedicated AR specialists streamlines revenue cycle management to promote a healthy cash flow.`
+    },
+    {
+        title: 'Credentialing and Contracting',
+        description:
+            `We handle the complex credentialing and contracting processes, fostering organic insurer and customer relationships.`
+    },
+    {
+        title: 'Out of Network Negotiation',
+        description:
+            `Allow our experts to negotiate beneficial terms with out-of-network providers, optimizing your reimbursement rates and profits.`
+    },
+    {
+        title: 'Prior and Retro Authorization',
+        description:
+            `Our proficient technicians manage prior and retro authorizations to ensure all medical procedures are pre-approved, reducing claim denials and delays.`
+    },
+    {
+        title: 'Insurance Eligibility Verification',
+        description:
+            `We promise accurate and timely insurance eligibility verification, allowing you to deliver quality patient care and reducing billing complications.`
+    },
+    {
+        title: 'Comprehensive Chart Auditing',
+        description:
+            `Unlock our in-depth chart audits to ensure your documents and claims are compliant, minimize the risk of denials, and optimize reimbursements.`
+    },
+    {
+        title: 'IT Equipment and Services',
+        description:
+            `Take advantage of our state-of-the-art IT solutions to support your emergency room's operational needs. Our technology enhances data security and improves workplace efficiency.`
+    },
+];
+
+// Healthcare Systems
+export const HSdata = [
+    {
+        title: 'Medical Billing and Coding',
+        description:
+            `With over a decade of experience, our expert billing and coding specialists optimize your revenue cycle.`
+    },
+    {
+        title: 'Medical Accounts Receivable',
+        description:
+            `Allow our proficient technicians to manage your AR to improve cash flow and patient care.`
+    },
+    {
+        title: 'Credentialing and Contracting',
+        description:
+            `Streamline credentialing and contracting process to foster deep relationships.`
+    },
+    {
+        title: 'Out of Network Negotiation',
+        description:
+            `Our specialists negotiate favorable terms with out-of-network providers, improving reimbursements and savings!`
+    },
+    {
+        title: 'Prior and Retro Authorization',
+        description:
+            `Partner with our team to navigate the complexities of prior and retro authorization.`
+    },
+    {
+        title: 'Insurance Eligibility Verification',
+        description:
+            `Our top-notch verification services ensure timely and accurate insurance verification, significantly reducing claim denials.`
+    },
+    {
+        title: 'Comprehensive Chart Auditing',
+        description:
+            `We conduct thorough chart audits to ensure compliance with evolving medical standards.`
+    },
+    {
+        title: 'IT Equipment and Services',
+        description:
+            `With our cutting-edge IT equipment and services, Xphyre Health enhances your operational efficiency and data security.`
+    },
+];
+
+// Hospitals 
+export const Hdata = [
+    {
+        title: 'Medical Billing and Coding',
+        description:
+            `Unlock our expert billing and coding solutions to wave goodbye to lengthy claims, incomplete patient data, and claim denials!`
+    },
+    {
+        title: 'Medical Accounts Receivable',
+        description:
+            `Partner with our AR specialists to minimize customer balances and maximize cash flow, significantly improving financial health. `
+    },
+    {
+        title: 'Credentialing and Contracting',
+        description:
+            `Allow our proficient technicians to streamline your credentialing and contracting processes, ensuring beneficial agreements and increased savings.`
+    },
+    {
+        title: 'Out of Network Negotiation',
+        description:
+            `Our skilled out-of-network negotiators determine the most favorable terms with out-of-network providers, eliminating out-of-pocket expenses and boosting revenue.`
+    },
+    {
+        title: 'Prior and Retro Authorization',
+        description:
+            `Mitigate the risk of claim denials and lost revenue with our expert prior and retro authorization solutions, which ensure timely and efficient approvals.`
+    },
+    {
+        title: 'Insurance Eligibility Verification',
+        description:
+            `Get on-time insurance eligibility verification with Xphyre Health's dedicated experts, reducing claim denials and billing complications.`
+    },
+    {
+        title: 'Comprehensive Chart Auditing',
+        description:
+            `Ensure compliance with the latest healthcare regulations and eliminate claim errors with our comprehensive chart audits and DRG reviews.`
+    },
+    {
+        title: 'IT Equipment and Services',
+        description:
+            `Improve patient satisfaction with our state-of-the-art IT equipment and services, boosting performance and efficiency.`
+    },
+];
+
+// Private Practices
+export const PPdata = [
+    {
+        title: 'Medical Billing and Coding',
+        description:
+            `Partner with our expert billing and coding specialists to maximize reimbursements and minimize claim denials.`
+    },
+    {
+        title: 'Medical Accounts Receivable',
+        description:
+            `Discover our proactive medical accounts receivable management approach to reduce outstanding balance and boost cash flow.`
+    },
+    {
+        title: 'Credentialing and Contracting',
+        description:
+            `Our experts streamline credentialing and contracting processes, ensuring favorable agreements and organic, long-lasting client relationships.`
+    },
+    {
+        title: 'Out of Network Negotiation',
+        description:
+            `Allow Xphyre Health's specialists to negotiate beneficial out-of-network terms to minimize out-of-pocket expenses and boost savings!`
+    },
+    {
+        title: 'Prior and Retro Authorization',
+        description:
+            `We handle prior and retro authorizations efficiently, ensuring timely approval and authorizations for medical treatments and procedures.`
+    },
+    {
+        title: 'Insurance Eligibility Verification',
+        description:
+            `Our expert eligibility verification specialists utilize up-to-date patient data to confirm patient insurance coverage accurately, reducing claim denials.`
+    },
+    {
+        title: 'Comprehensive Chart Auditing',
+        description:
+            `Pinpoint areas for improvement and mitigate the risk of penalties with Xphyre Health's thorough chart audits, documentation, and coding services.`
+    },
+    {
+        title: 'IT Equipment and Services',
+        description:
+            `Our state-of-the-art IT solutions are tailored to your private practice's unique needs, enhancing operational efficiency and data security.`
+    },
+];
+
+// Urgent Care
+export const UCdata = [
+    {
+        title: 'Medical Billing and Coding',
+        description:
+            `Our expert medical billers and coders offer efficient services customized for the fast-paced environment of urgent care centers.`
+    },
+    {
+        title: 'Medical Accounts Receivable',
+        description:
+            `Leverage Xphyre Health's AR services to optimize cash flow and reduce outstanding balances, improving your practice's financial health.`
+    },
+    {
+        title: 'Credentialing and Contracting',
+        description:
+            `We streamline your urgent care credentialing and contracting processes, empowering you to develop organic, long-lasting client relationships.`
+    },
+    {
+        title: 'Out of Network Negotiation',
+        description:
+            `Maximize your revenue and minimize out-of-pocket expenses with our reliable out-of-network negotiation services for urgent care teams.`
+    },
+    {
+        title: 'Prior and Retro Authorization',
+        description:
+            `Navigate the complexities of prior and retro authorizations and denials with Xphyre Heath's certified and trained specialists.`
+    },
+    {
+        title: 'Insurance Eligibility Verification',
+        description:
+            `Minimize claim denials, payment delays, and billing complications with our efficient and timely insurance eligibility verification services.`
+    },
+    {
+        title: 'Comprehensive Chart Auditing',
+        description:
+            `Spot areas for improvement and mitigate the risk of penalties with our extensive chart auditing services.`
+    },
+    {
+        title: 'IT Equipment and Services',
+        description:
+            `Take your medical urgent care to the next level with top-quality IT equipment and services tailored to your unique needs.`
+    },
+];

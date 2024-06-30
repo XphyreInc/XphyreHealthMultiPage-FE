@@ -7,6 +7,10 @@ import InsuranceEligibilityVerificationServices from './Pages/InsuranceEligibili
 import ChartAuditing from './Pages/ChartAuditing';
 import MedicalAccountsReceivableServices from './Pages/MedicalAccountsReceivableServices';
 import MedicalBillingAndCodingServices from './Pages/MedicalBillingAndCodingServices';
+import MedicalITEquipmentAndServices from './Pages/MedicalITEquipmentAndServices';
+import OutOfNetworkingNegotiationServices from './Pages/OutOfNetworkingNegotiationServices';
+import PatientBillingServices from './Pages/PatientBillingServices';
+import PriorAndRetroAuthorizationServices from './Pages/PriorAndRetroAuthorizationServices';
 import Appointments from './Pages/Appointments';
 import Contact from './Pages/Contact';
 import { useEffect } from 'react';
@@ -28,6 +32,10 @@ function App() {
         <Route path="CA" element={<ChartAuditing />} />
         <Route path="MARS" element={<MedicalAccountsReceivableServices />} />
         <Route path="MB&CS" element={<MedicalBillingAndCodingServices />} />
+        <Route path="MIEAS" element={<MedicalITEquipmentAndServices />} />
+        <Route path="OONNS" element={<OutOfNetworkingNegotiationServices />} />
+        <Route path="PBS" element={<PatientBillingServices />} />
+        <Route path="PARAS" element={<PriorAndRetroAuthorizationServices />} />
         <Route path="appointments" element={<Appointments />} />
         <Route path="contact" element={<Contact />} />
       </Route>
