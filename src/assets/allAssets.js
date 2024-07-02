@@ -10,6 +10,10 @@ import whiteArrow from './icons/arrow_white.svg';
 import email from './contact/icon_2.svg';
 import contact from './contact/icon_1.svg';
 import location from './contact/icon_3.svg';
+import compassion from './home_4/compassion.svg';
+import BannerBack from './BannerBack.jpg';
+import department_icon_1 from './home_3/department_icon_1.svg';
+
 
 export {
     about,
@@ -23,5 +27,8 @@ export {
     email,
     location,
     logoWithOpacity,
-    whiteArrow
+    whiteArrow,
+    compassion,
+    BannerBack,
+    department_icon_1
 }

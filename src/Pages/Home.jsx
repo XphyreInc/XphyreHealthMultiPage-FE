@@ -3,11 +3,9 @@ import HeroSection from '../components/Hero/HeroSection';
 import Section from '../components/Section';
 import AboutSectionStyle3 from '../components/Section/AboutSection/AboutSectionStyle3';
 import TestimonialSectionStyle2 from '../components/Section/TestimonialSection/TestimonialSectionStyle2';
-import WorkingProcess from '../components/Section/WorkingProcess';
 import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
 import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
-import BlogSectionStyle3 from '../components/Section/BlogSection/BlogSectionStyle3';
-import FaqSectionStyle2 from '../components/Section/FaqSection/FaqSectionStyle2';
+import Spacing from '../components/Spacing';
 import AppointmentSectionStyle2 from '../components/Section/AppointmentSection/AppointmentSectionStyle2';
 import { pageTitle } from '../helpers/PageTitle';
 import { WhyUsData } from '../Constants/constants';
@@ -52,21 +50,6 @@ export default function HomeStyle2() {
           sectionTitleUp="TESTIMONIALS"
         />
       </Section>
-      <Section
-        topMd={185}
-        topLg={140}
-        topXl={100}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
-        <WorkingProcess
-          sectionTitle="How it Works"
-          sectionTitleUp=""
-          sectionTitleDown=""
-          sectionSubTitle=""
-        />
-      </Section>
       <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
         <FeaturesSectionStyle2
           sectionTitle="Why Choose Us"
@@ -82,29 +65,7 @@ export default function HomeStyle2() {
           experienced medical professionals today!"
         />
       </Section>
-      <Section topMd={190} topLg={145} topXl={105}>
-        <BlogSectionStyle3
-          sectionTitle="Latest Update"
-          sectionTitleUp="BLOG POSTS"
-          sectionTitleDown=""
-          sectionSubTitle=""
-        />
-      </Section>
-      {/* Start FAQ Section */}
-      <Section
-        topMd={190}
-        topLg={145}
-        topXl={105}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
-      >
-        <FaqSectionStyle2
-          sectionTitle="Usually Asked"
-          sectionTitleUp="What People"
-        />
-      </Section>
-      {/* End FAQ Section */}
+      <Spacing md="150" lg="7" xl="100" />
       <Section>
         <AppointmentSectionStyle2
           bgUrl="/images/home_2/appointment_bg.svg"
@@ -113,6 +74,7 @@ export default function HomeStyle2() {
           sectionTitleUp="BOOK AN"
         />
       </Section>
+      <Spacing md="150" lg="7" xl="100" />
     </>
   );
 }

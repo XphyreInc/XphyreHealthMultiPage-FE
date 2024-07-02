@@ -8,16 +8,37 @@ import footerLogo from '../../assets/footer_logo_bg.svg';
 import {logo} from '../../assets/allAssets';
 
 const menuDataOne = [
-  { title: 'About', href: '#about' },
-  { title: 'Our Departments', href: '#our-departments' },
-  { title: 'Our Business', href: '#our-business' },
+  { title: 'Home', href: '/' },
+  { title: 'Our Processes', href: '/OurProcesses' },
+  { title: 'Our Solutions', href: '/OurSolutions' },
+  { title: 'Credentialing and Contracting Services', href: '/C&C' },
+  { title: 'Insurance Eligibility Verification Services', href: '/IEVS' }
 ];
 
 const menuDataTwo = [
-  { title: 'Our Services', href: '#our-services' },
-  { title: 'Our Expertise', href: '#our-expertise' },
-  { title: 'How We Help', href: '#how-we-help' },
+  { title: 'Chart Auditing', href: '/CA' },
+  { title: 'Medical Accounts Receivable Services', href: '/MARS' },
+  { title: 'Medical Billing and Coding Services', href: '/MB&CS' },
+  { title: 'Medical IT Equipment and Services', href: '/MIEAS' },
+  { title: 'Out of Networking Negotiation Services', href: '/OONNS' }
 ];
+
+const menuDataThree = [
+  { title: 'Patient Billing Services', href: '/PBS' },
+  { title: 'Prior and Retro Authorization Services', href: '/PARAS' },
+  { title: 'Clinics and Imaging Centers', href: '/CAIC' },
+  { title: 'Emergency Rooms', href: '/ER' },
+  { title: 'Healthcare Systems', href: '/HS' }
+];
+
+const menuDataFour = [
+  { title: 'Hospitals', href: '/H' },
+  { title: 'Private Practices', href: '/PP' },
+  { title: 'Urgent Care', href: '/UC' },
+  { title: 'Contact Us', href: '/ContactUs' },
+  { title: 'The Xphyre Edge', href: '/TheXphyreEdge' }
+];
+
 
 export default function Footer() {
   return (
@@ -40,13 +61,13 @@ export default function Footer() {
       <div className="cs_footer_main">
         <div className="container">
           <div className="row">
-            <div className="col-lg-7">
+            <div className="col-lg-4">
               <div className="cs_footer_item">
                 <TextWidget text="Xphyre Health" />
                 <ContactInfoWidget />
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-2">
               <div className="cs_footer_item">
                 <MenuWidget data={menuDataOne} />
               </div>
@@ -54,6 +75,16 @@ export default function Footer() {
             <div className="col-lg-2">
               <div className="cs_footer_item">
                 <MenuWidget data={menuDataTwo} />
+              </div>
+            </div>
+            <div className="col-lg-2">
+              <div className="cs_footer_item">
+                <MenuWidget data={menuDataThree} />
+              </div>
+            </div>
+            <div className="col-lg-2">
+              <div className="cs_footer_item">
+                <MenuWidget data={menuDataFour} />
               </div>
             </div>
             {/* <div className="col-lg-4">

@@ -100,6 +100,9 @@
 
   .cs_banner_title {
     margin-bottom: 25px;
+    background: -webkit-linear-gradient($black, $gray-dark);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @media (max-width: 1199px) {
       font-size: 50px;
     }

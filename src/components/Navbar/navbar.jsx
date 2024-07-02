@@ -49,7 +49,7 @@ export default function Navbar({ variant }) {
                       <Link to="/">Home</Link>
                     </li>
                     <li>
-                      <Link to="/about">Our Processes </Link>
+                      <Link to="/OurProcesses">Our Processes</Link>
                     </li>
 
                     <li className="menu-item-has-children">
@@ -84,31 +84,34 @@ export default function Navbar({ variant }) {
                             <Link to="/PARAS">Prior and Retro Authorization Services</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Clinics and Imaging Centers</Link>
+                            <Link to="/CAIC">Clinics and Imaging Centers</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Emergency Rooms</Link>
+                            <Link to="/ER">Emergency Rooms</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Healthcare Systems</Link>
+                            <Link to="/HS">Healthcare Systems</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Hospitals</Link>
+                            <Link to="/H">Hospitals</Link>
                           </li>
                           <li>
-                            <Link to="/timetable">Urgent Care</Link>
+                            <Link to="/PP">Private Practices</Link>
+                          </li>
+                          <li>
+                            <Link to="/UC">Urgent Care</Link>
                           </li>
                         </ul>
                       </DropDown>
                     </li>
                     <li>
-                      <Link to="/doctors">Our Solutions</Link>
+                      <Link to="/OurSolutions">Our Solutions</Link>
                     </li>
                     <li>
-                      <Link to="/contact">Contact Us</Link>
+                      <Link to="/ContactUs">Contact Us</Link>
                     </li>
                     <li>
-                      <Link to="/blog">The Xypher Edge</Link>
+                      <Link to="/TheXphyreEdge">The Xyphre Edge</Link>
                     </li>
                   </ul>
                   <span
@@ -188,7 +191,7 @@ export default function Navbar({ variant }) {
             <Spacing md="20" lg="50" xl="35" />
             <IconBoxStyle11
               title="Phone"
-              subTitle="123-456-7890"
+              subTitle="855-585-3935"
               iconSrc={contact}
             />
             <Spacing md="30" lg="30" xl="30" />

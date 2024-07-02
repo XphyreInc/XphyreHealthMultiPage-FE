@@ -694,7 +694,7 @@ export const CAICdata = [
             `Keep your clinic up-to-date with the latest healthcare regulations with our exceptional chart auditing and DRG review services.`
     },
     {
-        title: 'IT Equipment and Services',
+        title: 'IT Equipment and IT Services',
         description:
             `Take your clinic's efficiency and patient satisfaction up a notch with our high-quality IT equipment and services solutions!`
     },
@@ -738,7 +738,7 @@ export const ERdata = [
             `Unlock our in-depth chart audits to ensure your documents and claims are compliant, minimize the risk of denials, and optimize reimbursements.`
     },
     {
-        title: 'IT Equipment and Services',
+        title: 'IT Equipment and IT Services',
         description:
             `Take advantage of our state-of-the-art IT solutions to support your emergency room's operational needs. Our technology enhances data security and improves workplace efficiency.`
     },
@@ -782,7 +782,7 @@ export const HSdata = [
             `We conduct thorough chart audits to ensure compliance with evolving medical standards.`
     },
     {
-        title: 'IT Equipment and Services',
+        title: 'IT Equipment and IT Services',
         description:
             `With our cutting-edge IT equipment and services, Xphyre Health enhances your operational efficiency and data security.`
     },
@@ -826,7 +826,7 @@ export const Hdata = [
             `Ensure compliance with the latest healthcare regulations and eliminate claim errors with our comprehensive chart audits and DRG reviews.`
     },
     {
-        title: 'IT Equipment and Services',
+        title: 'IT Equipment and IT Services',
         description:
             `Improve patient satisfaction with our state-of-the-art IT equipment and services, boosting performance and efficiency.`
     },
@@ -870,7 +870,7 @@ export const PPdata = [
             `Pinpoint areas for improvement and mitigate the risk of penalties with Xphyre Health's thorough chart audits, documentation, and coding services.`
     },
     {
-        title: 'IT Equipment and Services',
+        title: 'IT Equipment and IT Services',
         description:
             `Our state-of-the-art IT solutions are tailored to your private practice's unique needs, enhancing operational efficiency and data security.`
     },
@@ -914,7 +914,53 @@ export const UCdata = [
             `Spot areas for improvement and mitigate the risk of penalties with our extensive chart auditing services.`
     },
     {
-        title: 'IT Equipment and Services',
+        title: 'IT Equipment and IT Services',
+        description:
+            `Take your medical urgent care to the next level with top-quality IT equipment and services tailored to your unique needs.`
+    },
+];
+
+
+// The Xypher Edge
+
+export const TheXypherEdgedata = [
+    {
+        title: 'Medical Billing and Coding',
+        description:
+            `Our expert medical billers and coders offer efficient services customized for the fast-paced environment of urgent care centers.`
+    },
+    {
+        title: 'Medical Accounts Receivable',
+        description:
+            `Leverage Xphyre Health's AR services to optimize cash flow and reduce outstanding balances, improving your practice's financial health.`
+    },
+    {
+        title: 'Credentialing and Contracting',
+        description:
+            `We streamline your urgent care credentialing and contracting processes, empowering you to develop organic, long-lasting client relationships.`
+    },
+    {
+        title: 'Out of Network Negotiation',
+        description:
+            `Maximize your revenue and minimize out-of-pocket expenses with our reliable out-of-network negotiation services for urgent care teams.`
+    },
+    {
+        title: 'Prior and Retro Authorization',
+        description:
+            `Navigate the complexities of prior and retro authorizations and denials with Xphyre Heath's certified and trained specialists.`
+    },
+    {
+        title: 'Insurance Eligibility Verification',
+        description:
+            `Minimize claim denials, payment delays, and billing complications with our efficient and timely insurance eligibility verification services.`
+    },
+    {
+        title: 'Comprehensive Chart Auditing',
+        description:
+            `Spot areas for improvement and mitigate the risk of penalties with our extensive chart auditing services.`
+    },
+    {
+        title: 'IT Equipment and IT Services',
         description:
             `Take your medical urgent care to the next level with top-quality IT equipment and services tailored to your unique needs.`
     },

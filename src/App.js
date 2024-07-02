@@ -11,6 +11,16 @@ import MedicalITEquipmentAndServices from './Pages/MedicalITEquipmentAndServices
 import OutOfNetworkingNegotiationServices from './Pages/OutOfNetworkingNegotiationServices';
 import PatientBillingServices from './Pages/PatientBillingServices';
 import PriorAndRetroAuthorizationServices from './Pages/PriorAndRetroAuthorizationServices';
+import ClinicsAndImagingCenters from './Pages/ClinicsAndImagingCenters';
+import EmergencyRooms from './Pages/EmergencyRooms';
+import HealthcareSystems from './Pages/HealthcareSystems';
+import Hospitals from './Pages/Hospitals';
+import PrivatePractices from './Pages/PrivatePractices';
+import UrgentCare from './Pages/UrgentCare';
+import TheXphyreEdge from './Pages/TheXphyreEdge';
+import ContactUs from './Pages/ContactUs';
+import OurProcesses from './Pages/OurProcesses';
+import OurSolutions from './Pages/OurSolutions';
 import Appointments from './Pages/Appointments';
 import Contact from './Pages/Contact';
 import { useEffect } from 'react';
@@ -36,6 +46,16 @@ function App() {
         <Route path="OONNS" element={<OutOfNetworkingNegotiationServices />} />
         <Route path="PBS" element={<PatientBillingServices />} />
         <Route path="PARAS" element={<PriorAndRetroAuthorizationServices />} />
+        <Route path="CAIC" element={<ClinicsAndImagingCenters />} />
+        <Route path="ER" element={<EmergencyRooms />} />
+        <Route path="HS" element={<HealthcareSystems />} />
+        <Route path="H" element={<Hospitals />} />
+        <Route path="PP" element={<PrivatePractices />} />
+        <Route path="UC" element={<UrgentCare />} />
+        <Route path="TheXphyreEdge" element={<TheXphyreEdge />} />
+        <Route path="ContactUs" element={<ContactUs />} />
+        <Route path="OurProcesses" element={<OurProcesses />} />
+        <Route path="OurSolutions" element={<OurSolutions />} />
         <Route path="appointments" element={<Appointments />} />
         <Route path="contact" element={<Contact />} />
       </Route>

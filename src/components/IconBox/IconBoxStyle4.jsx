@@ -20,9 +20,9 @@ export default function IconBoxStyle4({ title, description }) {
 
   return (
     <div className="cs_iconbox cs_style_4">
-      <h2 className="cs_iconbox_title cs_fs_32">{title}</h2>
+      <h2 className="cs_iconbox_title cs_fs_32 cs_main_heading_color">{title}</h2>
       <div>
-        <p className="cs_iconbox_subtitle m-0" >
+        <p className="cs_iconbox_subtitle m-0 para_color" >
           {isExpanded ? description : shortDescription}
         </p>
         <button style={{ border: "none", borderRadius: "0.5rem" }} onClick={toggleExpand}>
