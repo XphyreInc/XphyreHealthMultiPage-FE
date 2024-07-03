@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink,Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import DropDown from './DropDown';
 import logoNav from '../../assets/Asset 3.png';
 import { closeIcon } from '../../assets/allAssets';
@@ -36,10 +36,12 @@ export default function Navbar({ variant }) {
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
-                <div style={{ display: "flex" }} className="cs_site_branding" to="/">
-                  <img style={{ height: "3rem" }} src={logoNav} alt="logo" />
-                  <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
-                </div>
+                <a href="/">
+                  <div style={{ display: "flex" }} className="cs_site_branding">
+                    <img style={{ height: "3rem" }} src={logoNav} alt="logo" />
+                    <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
+                  </div>
+                </a>
                 <nav className="cs_nav">
                   <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
                     <li className="">
