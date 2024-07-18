@@ -6,6 +6,8 @@ import { closeIcon } from '../../assets/allAssets';
 import { logoWithOpacity, contact, email, location } from '../../assets/allAssets';
 import IconBoxStyle11 from '../IconBox/IconBoxStyle11';
 import Spacing from '../Spacing';
+import { navLinks } from '../../Constants/constants';
+
 
 export default function Navbar({ variant }) {
   const [isSticky, setIsSticky] = useState(false);
@@ -26,6 +28,10 @@ export default function Navbar({ variant }) {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleLinkClick = () => {
+    setMobileToggle(false);
+  };
   return (
     <>
       <header
@@ -42,96 +48,96 @@ export default function Navbar({ variant }) {
                     <p style={{ fontSize: "20px", position: "relative", top: "12px", left: "9px", color: 'black' }}>Xphyre <span style={{ fontWeight: 600 }}>Health</span></p>
                   </div>
                 </a>
-                <nav className="cs_nav">
+                {/* <nav className="cs_nav">
                   <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
                     <li className="">
-                      <NavLink exact to="/" activeClassName="active">
+                      <NavLink exact to="/" activeClassName="active" onClick={handleLinkClick}>
                         Home
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/OurProcesses" activeClassName="active">
+                      <NavLink to="/OurProcesses" activeClassName="active" onClick={handleLinkClick}>
                         Our Processes
                       </NavLink>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link to="#">
+                      <Link to="#" onClick={handleLinkClick}>
                         Our Services
                       </Link>
                       <DropDown>
                         <ul className="nav-dropdown" style={{ width: "23rem" }}>
                           <li>
-                            <NavLink to="/C&C" activeClassName="active">
+                            <NavLink to="/C&C" activeClassName="active" onClick={handleLinkClick}>
                               Credentialing and Contracting Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/IEVS" activeClassName="active">
+                            <NavLink to="/IEVS" activeClassName="active" onClick={handleLinkClick}>
                               Insurance Eligibility Verification Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/CA" activeClassName="active">
+                            <NavLink to="/CA" activeClassName="active" onClick={handleLinkClick}>
                               Chart Auditing
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/MARS" activeClassName="active">
+                            <NavLink to="/MARS" activeClassName="active" onClick={handleLinkClick}>
                               Medical Accounts Receivable Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/MB&CS" activeClassName="active">
+                            <NavLink to="/MB&CS" activeClassName="active" onClick={handleLinkClick}>
                               Medical Billing and Coding Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/MIEAS" activeClassName="active">
+                            <NavLink to="/MIEAS" activeClassName="active" onClick={handleLinkClick}>
                               Medical IT Equipment and Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/OONNS" activeClassName="active">
+                            <NavLink to="/OONNS" activeClassName="active" onClick={handleLinkClick}>
                               Out of Networking Negotiation Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/PBS" activeClassName="active">
+                            <NavLink to="/PBS" activeClassName="active" onClick={handleLinkClick}>
                               Patient Billing Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/PARAS" activeClassName="active">
+                            <NavLink to="/PARAS" activeClassName="active" onClick={handleLinkClick}>
                               Prior and Retro Authorization Services
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/CAIC" activeClassName="active">
+                            <NavLink to="/CAIC" activeClassName="active" onClick={handleLinkClick}>
                               Clinics and Imaging Centers
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/ER" activeClassName="active">
+                            <NavLink to="/ER" activeClassName="active" onClick={handleLinkClick}>
                               Emergency Rooms
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/HS" activeClassName="active">
+                            <NavLink to="/HS" activeClassName="active" onClick={handleLinkClick}>
                               Healthcare Systems
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/H" activeClassName="active">
+                            <NavLink to="/H" activeClassName="active" onClick={handleLinkClick}>
                               Hospitals
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/PP" activeClassName="active">
+                            <NavLink to="/PP" activeClassName="active" onClick={handleLinkClick}>
                               Private Practices
                             </NavLink>
                           </li>
                           <li>
-                            <NavLink to="/UC" activeClassName="active">
+                            <NavLink to="/UC" activeClassName="active" onClick={handleLinkClick}>
                               Urgent Care
                             </NavLink>
                           </li>
@@ -139,17 +145,17 @@ export default function Navbar({ variant }) {
                       </DropDown>
                     </li>
                     <li>
-                      <NavLink to="/OurSolutions" activeClassName="active">
+                      <NavLink to="/OurSolutions" activeClassName="active" onClick={handleLinkClick}>
                         Our Solutions
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/ContactUs" activeClassName="active">
+                      <NavLink to="/ContactUs" activeClassName="active" onClick={handleLinkClick}>
                         Contact Us
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/TheXphyreEdge" activeClassName="active">
+                      <NavLink to="/TheXphyreEdge" activeClassName="active" onClick={handleLinkClick}>
                         The Xyphre Edge
                       </NavLink>
                     </li>
@@ -162,7 +168,51 @@ export default function Navbar({ variant }) {
                   >
                     <span></span>
                   </span>
+                </nav> */}
+                <nav className="cs_nav">
+                  <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
+                    {navLinks.map((link, index) => (
+                      link.subLinks ? (
+                        <li className="menu-item-has-children" key={index}>
+                          <Link to="#" onClick={handleLinkClick}>
+                            {link.label}
+                          </Link>
+                          <DropDown>
+                            <ul className="nav-dropdown" style={{ width: "23rem" }}>
+                              {link.subLinks.map((subLink, subIndex) => (
+                                <li key={subIndex}>
+                                  <NavLink to={subLink.to} activeClassName="active" onClick={handleLinkClick}>
+                                    {subLink.label}
+                                  </NavLink>
+                                </li>
+                              ))}
+                            </ul>
+                          </DropDown>
+                        </li>
+                      ) : (
+                        <li key={index}>
+                          <NavLink
+                            exact={link.exact || false}
+                            to={link.to}
+                            activeClassName="active"
+                            onClick={handleLinkClick}
+                          >
+                            {link.label}
+                          </NavLink>
+                        </li>
+                      )
+                    ))}
+                  </ul>
+                  <span
+                    className={
+                      mobileToggle ? 'cs_menu_toggle cs_teggle_active' : 'cs_menu_toggle'
+                    }
+                    onClick={() => setMobileToggle(!mobileToggle)}
+                  >
+                    <span></span>
+                  </span>
                 </nav>
+
               </div>
               <div className="cs_main_header_right">
                 <div className="cs_toolbox">
