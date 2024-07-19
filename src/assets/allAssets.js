@@ -15,7 +15,14 @@ import BannerBack from './BannerBack.jpg';
 import department_icon_1 from './home_3/department_icon_1.svg';
 import contact_us from './Contact Us.jpg';
 import maximize_your_practice from './Maximize Your Practice’s.jpg';
-import book_an_appointment from './BOOK AN appointment.jpg';
+import book_an_appointment from './appointment.jpg';
+import our_solutions from './Our Solutions.jpg';
+import why_us from './why_us.jpg';
+import streamline_billing from './Streamline Billing.jpg';
+import our_process from './our process.jpg';
+import middle_banner from './Don’tLetYourHealthTakeaBackseat.jpg';
+import why_choose_us from './whychooseus.jpg';
+
 
 
 export {
@@ -36,5 +43,11 @@ export {
     department_icon_1,
     contact_us,
     maximize_your_practice,
-    book_an_appointment
+    book_an_appointment,
+    our_solutions,
+    why_us,
+    streamline_billing,
+    our_process,
+    middle_banner,
+    why_choose_us
 }
