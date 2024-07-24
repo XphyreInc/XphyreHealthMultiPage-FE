@@ -1,5 +1,4 @@
 import React from 'react';
-import VideoModal from '../VideoModal';
 import { heroBanner } from '../../assets/allAssets';
 
 
