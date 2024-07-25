@@ -16,7 +16,9 @@ export default function HomeStyle2() {
   return (
     <>
       <HeroSection
-        title="Empower Your Practice with Medical Billing Services"
+        title1="Empower Your"
+        title2="Practice with"
+        title3="Medical Billing Services"
         subTitle="Discover Custom Solutions to Redefine Your Practice's Financial Health"
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"

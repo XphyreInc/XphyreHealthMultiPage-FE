@@ -22,6 +22,21 @@ import streamline_billing from './Streamline Billing.jpg';
 import our_process from './our process.jpg';
 import middle_banner from './Don’tLetYourHealthTakeaBackseat.jpg';
 import why_choose_us from './whychooseus.jpg';
+import avatar_boy from './Avatarboy.jpg';
+import avatar_girl from './AvatarGirl.jpg';
+import CA from './servicesbanners/CA.jpg';
+import CandC from './servicesbanners/C&C.jpg';
+import H from './servicesbanners/H.jpg';
+import HAS from './servicesbanners/HAS.jpg';
+import CAIC from './servicesbanners/CAIC.jpg';
+import ER from './servicesbanners/ER.jpg';
+import IE from './servicesbanners/IE.jpg';
+import MARS from './servicesbanners/MARS.jpg';
+import MBACS from './servicesbanners/MB&CS.jpg';
+import OONNS from './servicesbanners/OONNC.jpg';
+import PARAS from './servicesbanners/PARAS.jpg';
+import PBS from './servicesbanners/PBS.jpg';
+import MIEAS from './servicesbanners/MIEAS.jpg';
 
 
 
@@ -49,5 +64,20 @@ export {
     streamline_billing,
     our_process,
     middle_banner,
-    why_choose_us
+    why_choose_us,
+    avatar_boy,
+    avatar_girl,
+    CA,
+    CandC,
+    H,
+    HAS,
+    CAIC,
+    ER,
+    IE,
+    MARS,
+    MBACS,
+    OONNS,
+    PARAS,
+    PBS,
+    MIEAS
 }
