@@ -8,8 +8,8 @@ import {
   contact_us,
   CA,
   CandC,
-  H,
-  HAS,
+  // H,
+  HS,
   CAIC,
   ER,
   IE,
@@ -18,7 +18,9 @@ import {
   OONNS,
   PARAS,
   PBS,
-  MIEAS
+  MIEAS,
+  PP,
+  UC
 } from '../../../assets/allAssets';
 
 export default function BannerSectionStyle5({ title, }) {
@@ -50,16 +52,22 @@ export default function BannerSectionStyle5({ title, }) {
     imageSource = PBS;
   } else if (location.pathname.includes('PARAS')) {
     imageSource = PARAS;
-  } else if (location.pathname.includes('H')) {
-    imageSource = H;
-  } else if (location.pathname.includes('HS')) {
-    imageSource = HAS;
+  } 
+  // else if (location.pathname.includes('H')) {
+  //   imageSource = H;
+  // }
+   else if (location.pathname.includes('HS')) {
+    imageSource = HS;
   } else if (location.pathname.includes('ER')) {
     imageSource = ER;
   } else if (location.pathname.includes('CAIC')) {
     imageSource = CAIC;
   }else if (location.pathname.includes('MIEAS')) {
     imageSource = MIEAS;
+  }else if (location.pathname.includes('UC')) {
+    imageSource = UC;
+  }else if (location.pathname.includes('PP')) {
+    imageSource = PP;
   }
 
 

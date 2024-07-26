@@ -23,10 +23,10 @@ export default function HomeStyle2() {
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         funfactList={[
-          { number: '80%', title: 'Accuracy Rate' },
-          { number: '95%', title: 'Collection Rate' },
-          { number: '89%', title: 'Satisfied Clients ' },
-          { number: '90%', title: 'Claim Approval' },
+          { number: '80%', title: 'Accuracy Rate'},
+          { number: '95%', title: 'Collection Rate'},
+          { number: '89%', title: 'Satisfied Clients'},
+          { number: '90%', title: 'Claim Approval'},
         ]}
       />
   {/* About Section  */}

@@ -26,8 +26,8 @@ import avatar_boy from './Avatarboy.jpg';
 import avatar_girl from './AvatarGirl.jpg';
 import CA from './servicesbanners/CA.jpg';
 import CandC from './servicesbanners/C&C.jpg';
-import H from './servicesbanners/H.jpg';
-import HAS from './servicesbanners/HAS.jpg';
+// import H from './servicesbanners/H.jpg';
+import HS from './servicesbanners/HS.jpg';
 import CAIC from './servicesbanners/CAIC.jpg';
 import ER from './servicesbanners/ER.jpg';
 import IE from './servicesbanners/IE.jpg';
@@ -37,6 +37,8 @@ import OONNS from './servicesbanners/OONNC.jpg';
 import PARAS from './servicesbanners/PARAS.jpg';
 import PBS from './servicesbanners/PBS.jpg';
 import MIEAS from './servicesbanners/MIEAS.jpg';
+import PP from './servicesbanners/PP.jpg';
+import UC from './servicesbanners/UC.jpg';
 
 
 
@@ -69,8 +71,8 @@ export {
     avatar_girl,
     CA,
     CandC,
-    H,
-    HAS,
+    // H,
+    HS,
     CAIC,
     ER,
     IE,
@@ -79,5 +81,7 @@ export {
     OONNS,
     PARAS,
     PBS,
-    MIEAS
+    MIEAS,
+    PP,
+    UC
 }
