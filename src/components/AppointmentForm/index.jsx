@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import 'react-datepicker/dist/react-datepicker.css';
-import { states } from '../../Constants/constants';
+import { states, monthlyCollections } from '../../Constants/constants';
 import Modal from '../Modal/Modal';
 
 export default function AppointmentForm() {
@@ -11,13 +11,16 @@ export default function AppointmentForm() {
     phoneNumber: '',
     state: '',
     monthlyCollections: '',
+    datetime: '',
+    time: "",
+    date: "",
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   });
   const [modal, setModal] = useState({ visible: false, message: '' });
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     if (name === 'firstName' || name === 'lastName') {
       setFormData((prevFormData) => {
         const [first, last] = prevFormData.fullname.split(' ');
@@ -29,6 +32,7 @@ export default function AppointmentForm() {
       validateName(name, value);
     } else {
       setFormData({ ...formData, [name]: value });
+
       if (name === 'email') validateEmail(value);
       if (name === 'state') validateState(value);
     }
@@ -48,6 +52,31 @@ export default function AppointmentForm() {
       setErrors((prevErrors) => ({ ...prevErrors, [field]: '' }));
     }
   };
+
+  const validatemonthlyCollections = (field, value) => {
+    if (!value) {
+      setErrors((prevErrors) => ({ ...prevErrors, [field]: 'This field is required.' }));
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, [field]: '' }));
+    }
+  };
+
+  const validateDatetime = (datetime) => {
+    let errors = {};
+
+    if (!datetime) {
+      errors.date = 'Date is required';
+    }
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      ...errors,
+    }));
+
+    return Object.keys(errors).length === 0;
+  };
+
+
+
 
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,11 +115,24 @@ export default function AppointmentForm() {
     return phoneNumber;
   };
 
+  const getCurrentDateTime = () => {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    return `${year}-${month}-${day}T${hours}:${minutes}`;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     let valid = true;
-
-    const { fullname, email, phoneNumber, state } = formData;
+    const { fullname, email, phoneNumber, state, datetime, monthlyCollections } = formData;
+    const [date, time] = datetime.split('T');
+    formData.date = date;
+    formData.time = time;
+    console.log(formData);
 
     if (!fullname.split(' ')[0] || !fullname.split(' ')[1]) {
       setErrors((prevErrors) => ({
@@ -104,6 +146,8 @@ export default function AppointmentForm() {
     validateEmail(email);
     validatePhoneNumber(phoneNumber);
     validateState(state);
+    validateDatetime(datetime);
+    validatemonthlyCollections(monthlyCollections)
 
     for (const error in errors) {
       if (errors[error]) {
@@ -119,13 +163,13 @@ export default function AppointmentForm() {
         ...formData,
         fullname: `${formData.fullname.split(' ')[0]} ${formData.fullname.split(' ')[1] || ''}`,
       })
-      .then(response => {
-        setModal({ visible: true, message: response.data.message || 'Thankyou for your details our team will contact you as soon as possible'});
-      })
-      .catch(error => {
-        setModal({ visible: true, message: 'An error occurred. Please try again.' });
-        console.error(error);
-      });
+        .then(response => {
+          setModal({ visible: true, message: response.data.message || 'Thankyou for your details our team will contact you as soon as possible' });
+        })
+        .catch(error => {
+          setModal({ visible: true, message: 'An error occurred. Please try again.' });
+          console.error(error);
+        });
     }
   };
 
@@ -202,7 +246,7 @@ export default function AppointmentForm() {
           {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
-        <div className="col-lg-6">
+        {/* <div className="col-lg-6">
           <label className="cs_input_label cs_heading_color">Monthly Collections</label>
           <input
             type="text"
@@ -213,7 +257,38 @@ export default function AppointmentForm() {
             onChange={handleChange}
           />
           <div className="cs_height_42 cs_height_xl_25" />
+        </div> */}
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">monthlyCollections</label>
+          <select
+            className="cs_form_field"
+            name="monthlyCollections"
+            value={formData.monthlyCollections}
+            onChange={handleChange}
+          >
+            {monthlyCollections.map((monthlyCollections) => (
+              <option key={monthlyCollections.value} value={monthlyCollections.value}>
+                {monthlyCollections}
+              </option>
+            ))}
+          </select>
+          {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
+          <div className="cs_height_42 cs_height_xl_25" />
         </div>
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Select a suitable time</label>
+          <input
+            type="datetime-local"
+            className="cs_form_field"
+            name="datetime"
+            value={formData.datetime}
+            onChange={handleChange}
+            min={getCurrentDateTime()}
+          />
+          {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
+          <div className="cs_height_42 cs_height_xl_25" />
+        </div>
+
         <div className="col-lg-12">
           <button className="cs_btn cs_style_1" type="submit">
             <span>Submit</span>
@@ -223,6 +298,7 @@ export default function AppointmentForm() {
             </i>
           </button>
         </div>
+
       </form>
 
       <Modal visible={modal.visible} message={modal.message} onClose={closeModal} />
