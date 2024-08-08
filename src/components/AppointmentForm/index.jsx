@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import axios from 'axios';
 import 'react-datepicker/dist/react-datepicker.css';
 import { states, monthlyCollections } from '../../Constants/constants';
 import Modal from '../Modal/Modal';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { setHours, setMinutes } from 'date-fns';
 
 export default function AppointmentForm() {
   const [formData, setFormData] = useState({
@@ -12,8 +15,8 @@ export default function AppointmentForm() {
     state: '',
     monthlyCollections: '',
     datetime: '',
-    time: "",
-    date: "",
+    time: null,
+    date: null,
     timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   });
   const [modal, setModal] = useState({ visible: false, message: '' });
@@ -45,63 +48,108 @@ export default function AppointmentForm() {
     validatePhoneNumber(formattedValue);
   };
 
-  const validateName = (field, value) => {
-    if (!value.trim()) {
-      setErrors((prevErrors) => ({ ...prevErrors, [field]: 'This field is required.' }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, [field]: '' }));
+  const handleDateChange = (selectedDate) => {
+    const date = selectedDate.toLocaleDateString(); // Extract date
+    const time = selectedDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); // Extract time
+
+    // Update the form data
+    setFormData({
+      ...formData,
+      date: date,
+      time: time,
+      datetime: selectedDate
+    });
+
+    // Clear the validation error if a valid date is selected
+    if (errors.datetime) {
+      setErrors({
+        ...errors,
+        datetime: '' // Clear the error for datetime
+      });
     }
   };
 
-  const validatemonthlyCollections = (field, value) => {
-    if (!value) {
-      setErrors((prevErrors) => ({ ...prevErrors, [field]: 'This field is required.' }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, [field]: '' }));
-    }
+  const validateName = (name) => {
+    return name && name.trim() !== '';
   };
-
+  
   const validateDatetime = (datetime) => {
-    let errors = {};
-
-    if (!datetime) {
-      errors.date = 'Date is required';
-    }
-    setErrors((prevErrors) => ({
-      ...prevErrors,
-      ...errors,
-    }));
-
-    return Object.keys(errors).length === 0;
+    return datetime !== '';
   };
-
-
-
-
+  
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!regex.test(email)) {
-      setErrors((prevErrors) => ({ ...prevErrors, email: 'Invalid email address.' }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, email: '' }));
-    }
+    return regex.test(email);
   };
-
+  
   const validatePhoneNumber = (phoneNumber) => {
     const regex = /^\+1 \(\d{3}\)-\d{3}-\d{4}$/;
-    if (!regex.test(phoneNumber)) {
-      setErrors((prevErrors) => ({ ...prevErrors, phoneNumber: 'Invalid phone number format. Use +1 (xxx)-xxx-xxxx' }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, phoneNumber: '' }));
-    }
+    return regex.test(phoneNumber);
+  };
+  
+  const validateState = (state) => {
+    return state && state.trim() !== '';
+  };
+  
+  const validateMonthlyCollections = (monthlyCollections) => {
+    // Implement the validation logic for monthlyCollections if needed
+    return true; // Adjust according to your validation logic
   };
 
-  const validateState = (state) => {
-    if (!state) {
-      setErrors((prevErrors) => ({ ...prevErrors, state: 'This field is required.' }));
-    } else {
-      setErrors((prevErrors) => ({ ...prevErrors, state: '' }));
+  const validateForm = (formData) => {
+    const { fullname, email, phoneNumber, state, datetime, monthlyCollections } = formData;
+    
+    let valid = true;
+    let errors = {};
+  
+    // Split full name into first and last name
+    const [firstName, lastName] = fullname.split(' ');
+  
+    // Validate full name
+    if (!validateName(firstName)) {
+      errors.firstName = 'First name is required';
+      valid = false;
     }
+    if (!validateName(lastName)) {
+      errors.lastName = 'Last name is required';
+      valid = false;
+    }
+    
+    // Validate email
+    if (!validateEmail(email)) {
+      errors.email = 'Invalid email address.';
+      valid = false;
+    }
+    
+    // Validate phone number
+    if (!validatePhoneNumber(phoneNumber)) {
+      errors.phoneNumber = 'Invalid phone number format. Use +1 (xxx)-xxx-xxxx';
+      valid = false;
+    }
+    
+    // Validate state
+    if (!validateState(state)) {
+      errors.state = 'This field is required.';
+      valid = false;
+    }
+    
+    // Validate datetime
+    if (!validateDatetime(datetime)) {
+      errors.datetime = 'Date and time is required';
+      valid = false;
+    }
+    
+    // Validate monthly collections (if applicable)
+    if (monthlyCollections !== undefined && !validateMonthlyCollections(monthlyCollections)) {
+      errors.monthlyCollections = 'Invalid monthly collections';
+      valid = false;
+    }
+  
+    // Set errors in state
+    setErrors(errors);
+  
+    console.log(valid);
+    return valid;
   };
 
   const formatPhoneNumber = (phoneNumber) => {
@@ -115,39 +163,10 @@ export default function AppointmentForm() {
     return phoneNumber;
   };
 
-  const getCurrentDateTime = () => {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    return `${year}-${month}-${day}T${hours}:${minutes}`;
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let valid = true;
-    const { fullname, email, phoneNumber, state, datetime, monthlyCollections } = formData;
-    const [date, time] = datetime.split('T');
-    formData.date = date;
-    formData.time = time;
-    console.log(formData);
-
-    if (!fullname.split(' ')[0] || !fullname.split(' ')[1]) {
-      setErrors((prevErrors) => ({
-        ...prevErrors,
-        firstName: !fullname.split(' ')[0] ? 'This field is required.' : '',
-        lastName: !fullname.split(' ')[1] ? 'This field is required.' : '',
-      }));
-      valid = false;
-    }
-
-    validateEmail(email);
-    validatePhoneNumber(phoneNumber);
-    validateState(state);
-    validateDatetime(datetime);
-    validatemonthlyCollections(monthlyCollections)
+    let isValid = validateForm(formData)
 
     for (const error in errors) {
       if (errors[error]) {
@@ -155,9 +174,11 @@ export default function AppointmentForm() {
         break;
       }
     }
+    console.log(isValid);
+
 
     if (valid) {
-      axios.post('https://xphyre-health-be.netlify.app/.netlify/functions/api/send_email', {
+      axios.post('http://localhost:5000/api/send_email', {
         // http://localhost:5000/api/send_email
         // https://xphyre-health-be.netlify.app/.netlify/functions/api/send_email
         ...formData,
@@ -172,6 +193,18 @@ export default function AppointmentForm() {
         });
     }
   };
+
+  const CustomInput = forwardRef(({ value, onClick }, ref) => (
+    <input
+      className="cs_form_field"
+      onClick={onClick}
+      ref={ref}
+      value={value}
+      onChange={() => { }} // No onChange needed here
+      placeholder="Select date and time"
+      readOnly
+    />
+  ));
 
   const closeModal = () => {
     setModal({ ...modal, visible: false });
@@ -246,18 +279,6 @@ export default function AppointmentForm() {
           {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
-        {/* <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">Monthly Collections</label>
-          <input
-            type="text"
-            className="cs_form_field"
-            placeholder="Monthly Collections (Optional)"
-            name="monthlyCollections"
-            value={formData.monthlyCollections}
-            onChange={handleChange}
-          />
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div> */}
         <div className="col-lg-6">
           <label className="cs_input_label cs_heading_color">monthlyCollections</label>
           <select
@@ -275,15 +296,32 @@ export default function AppointmentForm() {
           {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
           <div className="cs_height_42 cs_height_xl_25" />
         </div>
-        <div className="col-lg-6">
+        {/* <div className="col-lg-6">
           <label className="cs_input_label cs_heading_color">Select a suitable time</label>
           <input
             type="datetime-local"
-            className="cs_form_field"
+            className="cs_form_field cs_datetime_scroll"
             name="datetime"
             value={formData.datetime}
             onChange={handleChange}
             min={getCurrentDateTime()}
+          />
+          {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
+          <div className="cs_height_42 cs_height_xl_25" />
+        </div> */}
+
+        <div className="col-lg-6">
+          <label className="cs_input_label cs_heading_color">Select a suitable time</label>
+          <DatePicker
+            selected={formData.datetime}
+            onChange={handleDateChange}
+            showTimeSelect
+            dateFormat="MMMM d, yyyy h:mm aa"
+            timeIntervals={15} // Adjusts the time intervals to scroll through
+            minDate={new Date()} // Prevents past dates
+            minTime={setHours(setMinutes(new Date(), 0), 0)} // Start time limit (e.g., 00:00)
+            maxTime={setHours(setMinutes(new Date(), 59), 23)} // End time limit (e.g., 23:59)
+            customInput={<CustomInput />} // Use custom input with placeholder
           />
           {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
           <div className="cs_height_42 cs_height_xl_25" />
