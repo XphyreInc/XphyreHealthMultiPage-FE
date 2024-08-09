@@ -72,25 +72,25 @@ export default function AppointmentForm() {
   const validateName = (name) => {
     return name && name.trim() !== '';
   };
-  
+
   const validateDatetime = (datetime) => {
     return datetime !== '';
   };
-  
+
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
-  
+
   const validatePhoneNumber = (phoneNumber) => {
     const regex = /^\+1 \(\d{3}\)-\d{3}-\d{4}$/;
     return regex.test(phoneNumber);
   };
-  
+
   const validateState = (state) => {
     return state && state.trim() !== '';
   };
-  
+
   const validateMonthlyCollections = (monthlyCollections) => {
     // Implement the validation logic for monthlyCollections if needed
     return true; // Adjust according to your validation logic
@@ -98,13 +98,13 @@ export default function AppointmentForm() {
 
   const validateForm = (formData) => {
     const { fullname, email, phoneNumber, state, datetime, monthlyCollections } = formData;
-    
+
     let valid = true;
     let errors = {};
-  
+
     // Split full name into first and last name
     const [firstName, lastName] = fullname.split(' ');
-  
+
     // Validate full name
     if (!validateName(firstName)) {
       errors.firstName = 'First name is required';
@@ -114,40 +114,40 @@ export default function AppointmentForm() {
       errors.lastName = 'Last name is required';
       valid = false;
     }
-    
+
     // Validate email
     if (!validateEmail(email)) {
       errors.email = 'Invalid email address.';
       valid = false;
     }
-    
+
     // Validate phone number
     if (!validatePhoneNumber(phoneNumber)) {
       errors.phoneNumber = 'Invalid phone number format. Use +1 (xxx)-xxx-xxxx';
       valid = false;
     }
-    
+
     // Validate state
     if (!validateState(state)) {
       errors.state = 'This field is required.';
       valid = false;
     }
-    
+
     // Validate datetime
     if (!validateDatetime(datetime)) {
       errors.datetime = 'Date and time is required';
       valid = false;
     }
-    
+
     // Validate monthly collections (if applicable)
     if (monthlyCollections !== undefined && !validateMonthlyCollections(monthlyCollections)) {
       errors.monthlyCollections = 'Invalid monthly collections';
       valid = false;
     }
-  
+
     // Set errors in state
     setErrors(errors);
-  
+
     console.log(valid);
     return valid;
   };
@@ -178,7 +178,7 @@ export default function AppointmentForm() {
 
 
     if (valid) {
-      axios.post('http://localhost:5000/api/send_email', {
+      axios.post('https://xphyre-health-be.netlify.app/.netlify/functions/api/send_email', {
         // http://localhost:5000/api/send_email
         // https://xphyre-health-be.netlify.app/.netlify/functions/api/send_email
         ...formData,
@@ -211,92 +211,93 @@ export default function AppointmentForm() {
   };
   return (
     <>
-      <form className="row" onSubmit={handleSubmit}>
-        <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">First Name</label>
-          <input
-            type="text"
-            className="cs_form_field"
-            placeholder="David"
-            name="firstName"
-            onChange={handleChange}
-          />
-          {errors.firstName && <p style={{ color: 'red' }}>{errors.firstName}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div>
-        <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">Last Name</label>
-          <input
-            type="text"
-            className="cs_form_field"
-            placeholder="John"
-            name="lastName"
-            onChange={handleChange}
-          />
-          {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div>
-        <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">Email</label>
-          <input
-            type="email"
-            className="cs_form_field"
-            placeholder="example@gmail.com"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div>
-        <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">Phone Number</label>
-          <input
-            type="text"
-            className="cs_form_field"
-            placeholder="(xxx)-xxx-xxxx"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handlePhoneNumChange}
-          />
-          {errors.phoneNumber && <p style={{ color: 'red' }}>{errors.phoneNumber}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div>
-        <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">State</label>
-          <select
-            className="cs_form_field"
-            name="state"
-            value={formData.state}
-            onChange={handleChange}
-          >
-            {states.map((state) => (
-              <option key={state.value} value={state.value}>
-                {state.name}
-              </option>
-            ))}
-          </select>
-          {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div>
-        <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">monthlyCollections</label>
-          <select
-            className="cs_form_field"
-            name="monthlyCollections"
-            value={formData.monthlyCollections}
-            onChange={handleChange}
-          >
-            {monthlyCollections.map((monthlyCollections) => (
-              <option key={monthlyCollections.value} value={monthlyCollections.value}>
-                {monthlyCollections}
-              </option>
-            ))}
-          </select>
-          {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div>
-        {/* <div className="col-lg-6">
+      <div className='cs_contact_form cs_style_1 cs_white_bg cs_radius_20'>
+        <form className="row cs_white_bg" onSubmit={handleSubmit}>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">First Name</label>
+            <input
+              type="text"
+              className="cs_form_field"
+              placeholder="David"
+              name="firstName"
+              onChange={handleChange}
+            />
+            {errors.firstName && <p style={{ color: 'red' }}>{errors.firstName}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">Last Name</label>
+            <input
+              type="text"
+              className="cs_form_field"
+              placeholder="John"
+              name="lastName"
+              onChange={handleChange}
+            />
+            {errors.lastName && <p style={{ color: 'red' }}>{errors.lastName}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">Email</label>
+            <input
+              type="email"
+              className="cs_form_field"
+              placeholder="example@gmail.com"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">Phone Number</label>
+            <input
+              type="text"
+              className="cs_form_field"
+              placeholder="(xxx)-xxx-xxxx"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handlePhoneNumChange}
+            />
+            {errors.phoneNumber && <p style={{ color: 'red' }}>{errors.phoneNumber}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">State</label>
+            <select
+              className="cs_form_field"
+              name="state"
+              value={formData.state}
+              onChange={handleChange}
+            >
+              {states.map((state) => (
+                <option key={state.value} value={state.value}>
+                  {state.name}
+                </option>
+              ))}
+            </select>
+            {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">monthlyCollections</label>
+            <select
+              className="cs_form_field"
+              name="monthlyCollections"
+              value={formData.monthlyCollections}
+              onChange={handleChange}
+            >
+              {monthlyCollections.map((monthlyCollections) => (
+                <option key={monthlyCollections.value} value={monthlyCollections.value}>
+                  {monthlyCollections}
+                </option>
+              ))}
+            </select>
+            {errors.state && <p style={{ color: 'red' }}>{errors.state}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
+          {/* <div className="col-lg-6">
           <label className="cs_input_label cs_heading_color">Select a suitable time</label>
           <input
             type="datetime-local"
@@ -310,37 +311,37 @@ export default function AppointmentForm() {
           <div className="cs_height_42 cs_height_xl_25" />
         </div> */}
 
-        <div className="col-lg-6">
-          <label className="cs_input_label cs_heading_color">Select a suitable time</label>
-          <DatePicker
-            selected={formData.datetime}
-            onChange={handleDateChange}
-            showTimeSelect
-            dateFormat="MMMM d, yyyy h:mm aa"
-            timeIntervals={15} // Adjusts the time intervals to scroll through
-            minDate={new Date()} // Prevents past dates
-            minTime={setHours(setMinutes(new Date(), 0), 0)} // Start time limit (e.g., 00:00)
-            maxTime={setHours(setMinutes(new Date(), 59), 23)} // End time limit (e.g., 23:59)
-            customInput={<CustomInput />} // Use custom input with placeholder
-          />
-          {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
-          <div className="cs_height_42 cs_height_xl_25" />
-        </div>
+          <div className="col-lg-6">
+            <label className="cs_input_label cs_heading_color">Select a suitable time</label>
+            <DatePicker
+              selected={formData.datetime}
+              onChange={handleDateChange}
+              showTimeSelect
+              dateFormat="MMMM d, yyyy h:mm aa"
+              timeIntervals={15} // Adjusts the time intervals to scroll through
+              minDate={new Date()} // Prevents past dates
+              minTime={setHours(setMinutes(new Date(), 0), 0)} // Start time limit (e.g., 00:00)
+              maxTime={setHours(setMinutes(new Date(), 59), 23)} // End time limit (e.g., 23:59)
+              customInput={<CustomInput />} // Use custom input with placeholder
+            />
+            {errors.datetime && <p style={{ color: 'red' }}>{errors.datetime}</p>}
+            <div className="cs_height_42 cs_height_xl_25" />
+          </div>
 
-        <div className="col-lg-12">
-          <button className="cs_btn cs_style_1" type="submit">
-            <span>Submit</span>
-            <i>
-              <img src="/images/icons/arrow_white.svg" alt="Icon" />
-              <img src="/images/icons/arrow_white.svg" alt="Icon" />
-            </i>
-          </button>
-        </div>
+          <div className="col-lg-12">
+            <button className="cs_btn cs_style_1" type="submit">
+              <span>Submit</span>
+              <i>
+                <img src="/images/icons/arrow_white.svg" alt="Icon" />
+                <img src="/images/icons/arrow_white.svg" alt="Icon" />
+              </i>
+            </button>
+          </div>
 
-      </form>
+        </form>
 
-      <Modal visible={modal.visible} message={modal.message} onClose={closeModal} />
-
+        <Modal visible={modal.visible} message={modal.message} onClose={closeModal} />
+      </div>
     </>
 
 
