@@ -4,7 +4,6 @@ import ContactForm from '../components/ContactForm';
 import Section from '../components/Section';
 import ContactInfoSection from '../components/Section/ContactInfoSection';
 import { pageTitle } from '../helpers/PageTitle';
-import AppointmentForm from '../components/AppointmentForm';
 
 
 export default function ContactUs() {
@@ -21,8 +20,6 @@ export default function ContactUs() {
         <div className="row">
           <div className="col-lg-10 offset-lg-1">
             <ContactForm />
-            <AppointmentForm />
-
           </div>
         </div>
       </div>
