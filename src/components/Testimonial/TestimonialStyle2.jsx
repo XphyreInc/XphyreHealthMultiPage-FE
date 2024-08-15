@@ -10,7 +10,7 @@ export default function TestimonialStyle2({
 }) {
   return (
     <div className="cs_testimonial cs_style_2">
-      <div className="cs_testimonial_text cs_radius_25 cs_white_bg cs_fs_24" style={{height:"28rem"}}>
+      <div className="cs_testimonial_text cs_radius_25 cs_white_bg cs_fs_24" >
         <div className="cs_quote_icon">
           <svg
             width={50}

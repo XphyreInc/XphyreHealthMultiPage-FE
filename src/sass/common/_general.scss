@@ -312,8 +312,8 @@ hr {
   color: $accent;
 }
 
-.cs_main_heading_color{
-    background: -webkit-linear-gradient($accent-three, $accent-four);
+.cs_main_heading_color {
+  background: -webkit-linear-gradient($accent-three, $accent-four);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -340,7 +340,7 @@ hr {
   color: $white;
 }
 
-.para_color{
+.para_color {
   background: -webkit-linear-gradient($black, $gray-dark);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -350,9 +350,33 @@ hr {
   background: linear-gradient(to right, $accent-four, $accent-three);
 }
 
+.line_style {
+  width: 22rem;
+  height: 5px;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px rgb(11, 11, 97) solid;
+  border-style: double;
+}
+
+.style_border {
+  width: 30vw;
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: 200;
+	padding: 0 4vw 4vw;
+	border-right: 2px;
+	border-left: 0;
+	border-style: solid;
+/* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+	border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
+}
+
 .cs_gray_bg_1 {
   background-color: rgba(210, 234, 239, 0.2);
 }
+
 
 .cs_half_bg,
 .cs_half_bg_2 {
@@ -465,7 +489,7 @@ hr {
   }
 
   &::after {
-    background-image: linear-gradient(270deg,$accent-four 0%, $accent-end 100%);
+    background-image: linear-gradient(270deg, $accent-four 0%, $accent-end 100%);
     opacity: 0;
   }
 
@@ -3135,4 +3159,3 @@ a.ui-button:active,
   white-space: normal;
   overflow: visible;
 }
-
