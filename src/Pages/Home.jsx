@@ -63,9 +63,8 @@ export default function HomeStyle2() {
       <Section>
         <BannerSectionStyle2
           bgUrl="/images/home_2/cta_bg.jpeg"
-          title="Don’t Let Your Health Take a Backseat!"
-          subTitle="Schedule an appointment with one of our <br />
-          experienced medical professionals today!"
+          title="Transform Your Practice with Effortless Billing Solutions from Xphyre Health"
+          subTitle=""
         />
       </Section>
       <Spacing md="150" lg="7" xl="100" />
