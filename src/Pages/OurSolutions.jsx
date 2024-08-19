@@ -35,21 +35,7 @@ export default function OurSolutions() {
                     ]}
                 />
             </Section>
-            {/* <Section
-                topMd={200}
-                topLg={150}
-                topXl={110}
-                bottomMd={175}
-                bottomLg={125}
-                bottomXl={85}
-            >
-                <DepartmentSectionStyle5
-                    sectionTitle="For Your Health"
-                    sectionTitleUp="OUR SERVICES"
-                    data={TheXypherEdgedata}
-                />
-            </Section> */}
-            <Spacing md="200" lg="10" xl="150" />
+            <Spacing md="200" lg="100" xl="150" />
             <Section className="cs_footer_margin_0">
                 <BannerSectionStyle4
                     bgUrl="images/doctors/banner_bg_2.jpeg"
