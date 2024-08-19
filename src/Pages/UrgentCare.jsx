@@ -1,5 +1,6 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+// import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
 import FeaturesSectionStyle4 from '../components/Section/FeaturesSection/FeaturesSectionStyle4';
 import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
@@ -14,12 +15,27 @@ export default function UrgentCare() {
     pageTitle('UC');
     return (
         <>
-            <BannerSectionStyle5
+         <HeroStyle5
+                title="Urgent Care"
+                subTitle="Streamlining Emergency Room Operations for Excellence"
+                imgUrl="/images/home_5/hero_img.png"
+                H="Driving Success in Urgent Care Billing and Coding "
+                p="Discover our proven track record of success and how we've helped clients nationwide increase revenue, reduce billing errors, and improve efficiency:"
+                detail="Seeking cost-effective and error-free billing and coding services for your urgent care? Xpyhre Health enters the frame, offering extensive expertise and over a decade of experience! 
+                Our trained specialists boast an in-depth knowledge of medical billing and authorization processes, optimizing reimbursements and revenue. So, with certified billers and coders, we streamline your operations and empower you to deliver quality patient care."
+                funfactList={[
+                    { number: '20%', title: 'Accuracy Rate' },
+                    { number: '95%', title: 'Reduction in AR Days' },
+                    { number: '50%', title: 'Satisfied Clients' },
+                    { number: '10%', title: 'Claim Approval' },
+                ]}
+            />
+            {/* <BannerSectionStyle5
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
                 title="Urgent Care"
                 subTitle=""
-            />
+            /> */}
             <Section topMd={200} topLg={150} topXl={110}>
                 <FeaturesSectionStyle4
                     sectionTitle="Comprehensive Services for Urgent Care"

@@ -38,7 +38,7 @@ export default function Navbar({ variant }) {
         className={`cs_site_header cs_style1 cs_sticky_header ${mobileToggle ? 'cs_mobile_toggle_active' : ''
           } ${variant} ${isSticky ? 'cs_active_sticky' : ''}`}
       >
-        <div className="cs_main_header">
+        <div className="cs_main_header" style={{ backgroundColor: "white" }}>
           <div className="container">
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
@@ -57,7 +57,7 @@ export default function Navbar({ variant }) {
                             {link.label}
                           </Link>
                           <DropDown>
-                            <ul className="nav-dropdown" style={{ width: "23rem"}}>
+                            <ul className="nav-dropdown" style={{ width: "23rem" }}>
                               {link.subLinks.map((subLink, subIndex) => (
                                 <li key={subIndex}>
                                   <NavLink to={subLink.to} activeClassName="active" onClick={handleLinkClick}>

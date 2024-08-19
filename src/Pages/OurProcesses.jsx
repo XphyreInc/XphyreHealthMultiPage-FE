@@ -41,7 +41,6 @@ export default function OurProcesses() {
                     subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
                 />
             </Section>
-            {/* <Spacing md="0" lg="0" xl="0" /> */}
         </>
     );
 }

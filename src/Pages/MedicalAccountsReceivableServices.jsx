@@ -3,9 +3,10 @@ import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSecti
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
+import DepartmentSection from '../components/Section/DepartmentSection';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
-import { MARSdata1, MARSdata2 } from '../Constants/constants';
+import { MARSdata1, MARSdata2,WhoWeServeCommon } from '../Constants/constants';
 
 
 export default function MedicalAccountsReceivableServices() {
@@ -45,6 +46,13 @@ export default function MedicalAccountsReceivableServices() {
                 <DepartmentSectionStyle2
                     sectionTitle="Revolutionize Your Cash Flow "
                     data={MARSdata2}
+                />
+            </Section>
+            <Section topMd={185} topLg={150} topXl={110}>
+                <DepartmentSection
+                    sectionTitle="Discover Cash Flow Confidence: Who We Serve?"
+                    bgUrl="images/home_1/department_bg.svg"
+                    data={WhoWeServeCommon}
                 />
             </Section>
         </>

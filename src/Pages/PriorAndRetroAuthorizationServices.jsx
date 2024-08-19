@@ -3,9 +3,10 @@ import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSecti
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
+import DepartmentSection from '../components/Section/DepartmentSection';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
-import { PARASdata1 } from '../Constants/constants';
+import { PARASdata1,WhoWeServeCommon2 } from '../Constants/constants';
 import { PARASdata2 } from '../Constants/constants';
 
 
@@ -46,6 +47,13 @@ export default function PriorAndRetroAuthorizationServices() {
         <DepartmentSectionStyle2
           sectionTitle="Transform Your Operations"
           data={PARASdata2}
+        />
+      </Section>
+      <Section topMd={185} topLg={150} topXl={110}>
+        <DepartmentSection
+          sectionTitle="Optimize Workplace Efficiency and Cash Flow with Xphyre Health: Who We Serve?"
+          bgUrl="images/home_1/department_bg.svg"
+          data={WhoWeServeCommon2}
         />
       </Section>
     </>

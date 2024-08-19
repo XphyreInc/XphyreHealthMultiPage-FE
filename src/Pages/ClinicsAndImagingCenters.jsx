@@ -1,5 +1,6 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+// import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
 import FeaturesSectionStyle4 from '../components/Section/FeaturesSection/FeaturesSectionStyle4';
 import Section from '../components/Section';
@@ -16,12 +17,27 @@ export default function ClinicsAndImagingCenters() {
     pageTitle('CAIC');
     return (
         <>
-            <BannerSectionStyle5
+            <HeroStyle5
+                title="Clinics and Imaging Centers"
+                subTitle="Streamlining Your Operations to Drive Growth and Success"
+                imgUrl="/images/home_5/hero_img.png"
+                H="Proven Track Record in Emergency Room Management "
+               p="With a dedicated team of skilled experts, we've helped numerous clinics and imaging centers increase revenue, reduce billing errors, and unlock success!"
+               detail="Is your clinic or specialty center overwhelmed with administrative tasks? Seeking an economical solution to your billing, coding, and authorization needs? Xphyre Health, boasting intimate industry knowledge and a decade of experience, enters the picture.
+                Our certified medical billers and coders utilize state-of-the-art tech and reliable strategies to optimize operations, enhance efficiency, and maximize revenue!"
+                funfactList={[
+                    { number: '20%', title: 'Accuracy Rate' },
+                    { number: '95%', title: 'Reduction in AR Days' },
+                    { number: '50%', title: 'Satisfied Clients' },
+                    { number: '10%', title: 'Claim Approval' },
+                ]}
+            />
+            {/* <BannerSectionStyle5
                 bgUrl="/images/doctors/banner_bg.svg"
                 imgUrl="/images/doctors/banner_img.png"
                 title="Clinics and Imaging Centers"
                 subTitle=""
-            />
+            /> */}
             <Section topMd={200} topLg={150} topXl={110}>
                 <FeaturesSectionStyle4
                     sectionTitle="Discover Our Diverse Services"
@@ -43,7 +59,6 @@ export default function ClinicsAndImagingCenters() {
                     subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
                 />
             </Section>
-            <Spacing md="200" lg="10" xl="150" />
         </>
     );
 }

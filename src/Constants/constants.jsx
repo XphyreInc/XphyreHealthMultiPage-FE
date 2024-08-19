@@ -233,12 +233,12 @@ export const WhyUsDataH = [
     {
         iconUrl: compassion,
         title: `Stay ahead of the curve with cutting-edge technology and an up-to-date patient database`,
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
         title: 'Maximize revenue and minimize out-of-pocket costs by identifying lost revenue causes',
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
@@ -251,12 +251,12 @@ export const WhyUsDataPP = [
     {
         iconUrl: compassion,
         title: `A track record of success in optimizing private practice's efficiency `,
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
         title: 'Access to cutting-edge tech and innovative approaches',
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
@@ -269,12 +269,12 @@ export const WhyUsDataUC = [
     {
         iconUrl: compassion,
         title: `Extensive industry expertise and innovative solutions`,
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
         title: 'Commitment to excellence and state-of-the-art tech',
-        subTitle:``,
+        subTitle: ``,
     },
     {
         iconUrl: compassion,
@@ -383,6 +383,11 @@ export const C_and_C_Data2 = [
         description:
             `Xphyre Health believes that no two healthcare clinics are similar, so we offer customized solutions to meet your unique needs. Our dedicated staff of trained medical revenue management experts work closely with your team, providing regular updates and personalized support.  
             What's more? We utilize the latest technology to mitigate the risk of costly errors while enhancing your turnaround times.`
+    },
+    {
+        title: 'Your Pathway to Simplicity: How to Get Started with Xphyre Health',
+        description:
+            `Empower your practice with top-tier credentialing and contracting services by partnering with Xphyre Health today! By reaching out, you can learn more about how we help you navigate credentialing and contracting challenges.`
     },
 ];
 
@@ -1206,4 +1211,180 @@ export const monthlyCollections = [
     "$50,000 - $100,000",
     "$100,000 - $250,000",
     "$250,000+"
+];
+
+
+export const WhoWeServeHome = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practices',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+
+export const WhoWeServeCandC = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+export const WhoWeServeIEVS = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+];
+
+export const WhoWeServeCA = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+
+export const WhoWeServeMIEAS = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+
+export const WhoWeServeCommon = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
+    {
+        title: 'Nursing Facilities',
+    },
+    {
+        title: 'All Specialties',
+    },
+];
+export const WhoWeServeCommon2 = [
+    {
+        title: 'Emergency Rooms',
+    },
+    {
+        title: 'Healthcare Systems',
+    },
+    {
+        title: 'Hospitals',
+    },
+    {
+        title: 'Urgent Care',
+    },
+    {
+        title: 'Private Practitioners',
+    },
+    {
+        title: 'Clinics and Imaging Centers',
+    },
 ];

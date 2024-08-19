@@ -5,10 +5,11 @@ import AboutSectionStyle3 from '../components/Section/AboutSection/AboutSectionS
 import TestimonialSectionStyle2 from '../components/Section/TestimonialSection/TestimonialSectionStyle2';
 import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
 import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
+import DepartmentSection from '../components/Section/DepartmentSection';
 import Spacing from '../components/Spacing';
 import AppointmentSectionStyle2 from '../components/Section/AppointmentSection/AppointmentSectionStyle2';
 import { pageTitle } from '../helpers/PageTitle';
-import { WhyUsData } from '../Constants/constants';
+import { WhyUsData, WhoWeServeHome } from '../Constants/constants';
 
 
 export default function HomeStyle2() {
@@ -23,14 +24,14 @@ export default function HomeStyle2() {
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         funfactList={[
-          { number: '80%', title: 'Accuracy Rate'},
-          { number: '95%', title: 'Collection Rate'},
-          { number: '89%', title: 'Satisfied Clients'},
-          { number: '90%', title: 'Claim Approval'},
+          { number: '80%', title: 'Accuracy Rate' },
+          { number: '95%', title: 'Collection Rate' },
+          { number: '89%', title: 'Satisfied Clients' },
+          { number: '90%', title: 'Claim Approval' },
         ]}
       />
-  {/* About Section  */}
-    <Section id="about" bottomMd={190} bottomLg={145} bottomXl={105}>
+      {/* About Section  */}
+      <Section id="about" bottomMd={190} bottomLg={145} bottomXl={105}>
         <AboutSectionStyle3
           titleUp="ABOUT US"
           title="We’ll take care of your payments"
@@ -76,7 +77,13 @@ export default function HomeStyle2() {
           sectionTitleUp="BOOK AN"
         />
       </Section>
-      {/* <Spacing md="150" lg="7" xl="100" /> */}
+      <Section topMd={185} topLg={150} topXl={110}>
+        <DepartmentSection
+          sectionTitle="Serving Practices of All Sizes: Unlock Your Healthcare Practice's True Revenue Potential"
+          bgUrl="images/home_1/department_bg.svg"
+          data={WhoWeServeHome}
+        />
+      </Section>
     </>
   );
 }
