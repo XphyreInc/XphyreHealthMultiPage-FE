@@ -12,22 +12,22 @@ export default function BannerSectionStyle4({ title, subTitle, center, }) {
     textSource = "Elevate Your Practice with Xphyre Health’s Hassle-Free Billing & Coding Solutions";
   }
   else if (location.pathname.includes('OurSolutions')) {
-    textSource = "our_solutions";
+    textSource = "Houston Trusts Xphyre for Streamlined Billing & Revenue Boosts";
   }
   else if (location.pathname.includes('ContactUs')) {
-    textSource = "contact_us";
+    textSource = "Get in Touch with Us—We're Here to Serve!";
   }
   else if (location.pathname.includes('TheXphyreEdge')) {
-    textSource = "our_solutions";
+    textSource = "Houston Trusts Xphyre for Streamlined Billing & Revenue Boosts";
   }
   else if (location.pathname.includes('CAIC')) {
     textSource = "Optimize Your Clinic’s Success with Xphyre Health’s Expert Billing & Coding Solutions";
   }
   else if (location.pathname.includes('CA')) {
-    textSource = "CA";
+    textSource = "Elevate Productivity and Care: Precision Chart Auditing for Error-Free Compliance";
   }
   else if (location.pathname.includes('IEVS')) {
-    textSource = "IE";
+    textSource = "Avoid Denials & Delays with Instant Insurance Verification";
   }
   else if (location.pathname.includes('MARS')) {
     textSource = "Unlock Your Clinic’s Full Revenue Potential with Expert AR Solutions from Xphyre Health";
@@ -39,7 +39,7 @@ export default function BannerSectionStyle4({ title, subTitle, center, }) {
     textSource = "Master Out-of-Network Negotiations with Xphyre Health’s Expert Solutions";
   }
   else if (location.pathname.includes('C&C')) {
-    textSource = "CandC";
+    textSource = "Build Lasting Patient Relationships and Maximize Care Quality";
   }
   else if (location.pathname.includes('PBS')) {
     textSource = "Simplify Patient Billing and Boost Efficiency with Xphyre Health";
@@ -63,7 +63,7 @@ export default function BannerSectionStyle4({ title, subTitle, center, }) {
     textSource = "Transform Your Urgent Care Billing with Xphyre Health’s Expert Solutions";
   }
   else if (location.pathname.includes('PP')) {
-    textSource = "PP";
+    textSource = "Manage Your Finances and Boost Revenue—Xphyre Health Billing Solutions Takes Care of Everything!";
   }
 
 

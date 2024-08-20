@@ -3,13 +3,13 @@ import HeroSection from '../components/Hero/HeroSection';
 import Section from '../components/Section';
 import AboutSectionStyle3 from '../components/Section/AboutSection/AboutSectionStyle3';
 import TestimonialSectionStyle2 from '../components/Section/TestimonialSection/TestimonialSectionStyle2';
+import WhyChooseUS from '../components/Section/WhyChooseUs/WhyChooseUs';
 import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
-import FeaturesSectionStyle2 from '../components/Section/FeaturesSection/FeaturesSectionStyle2';
 import DepartmentSection from '../components/Section/DepartmentSection';
 import Spacing from '../components/Spacing';
 import AppointmentSectionStyle2 from '../components/Section/AppointmentSection/AppointmentSectionStyle2';
 import { pageTitle } from '../helpers/PageTitle';
-import { WhyUsData, WhoWeServeHome } from '../Constants/constants';
+import {WhoWeServeHome, tabData } from '../Constants/constants';
 
 
 export default function HomeStyle2() {
@@ -30,8 +30,8 @@ export default function HomeStyle2() {
           { number: '90%', title: 'Claim Approval' },
         ]}
       />
-      {/* About Section  */}
-      <Section id="about" bottomMd={190} bottomLg={145} bottomXl={105}>
+      {/* <Spacing md="150" lg="7" xl="100" /> */}
+      <Section id="about">
         <AboutSectionStyle3
           titleUp="ABOUT US"
           title="We’ll take care of your payments"
@@ -39,6 +39,7 @@ export default function HomeStyle2() {
           Our tailored services and expert medical billing specialists are proficient at eliminating billing errors and maximizing workplace efficiency. With attention to detail and a commitment to excellence, Xphyre Health helps you focus on what matters most – delivering excellent patient care!"
         />
       </Section>
+      <Spacing md="150" lg="7" xl="100" />
       <Section
         className="cs_bg_filed"
         style={{ backgroundImage: `url(/images/home_2/testimonial_bg.svg)` }}
@@ -54,18 +55,20 @@ export default function HomeStyle2() {
           sectionTitleUp="TESTIMONIALS"
         />
       </Section>
-      <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
-        <FeaturesSectionStyle2
-          sectionTitle="Why Choose Us"
-          imgUrl="images/about/why_choose_us.jpeg"
-          data={WhyUsData}
-        />
-      </Section>
+      <Spacing md="150" lg="7" xl="100" />
       <Section>
         <BannerSectionStyle2
           bgUrl="/images/home_2/cta_bg.jpeg"
           title="Transform Your Practice with Effortless Billing Solutions from Xphyre Health"
           subTitle=""
+        />
+      </Section>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
+        <WhyChooseUS
+          sectionTitle="Why Choose Us"
+          sectionTitleDown="Choosing the right partner for your healthcare billing needs can make all the difference in the efficiency and profitability of your practice. At Xphyre Health, we stand out by offering a blend of expertise, innovation, and personalized service. Here’s why healthcare providers across Houston and beyond trust us to handle their billing and coding challenges effectively."
+          data={tabData}
         />
       </Section>
       <Spacing md="150" lg="7" xl="100" />
@@ -77,7 +80,8 @@ export default function HomeStyle2() {
           sectionTitleUp="BOOK AN"
         />
       </Section>
-      <Section topMd={185} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <DepartmentSection
           sectionTitle="Serving Practices of All Sizes: Unlock Your Healthcare Practice's True Revenue Potential"
           bgUrl="images/home_1/department_bg.svg"

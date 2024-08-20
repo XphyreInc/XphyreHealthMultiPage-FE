@@ -29,7 +29,7 @@ export default function TestimonialStyle2({
             />
           </svg>
         </div>
-        <p style={{textAlign:'justify'}}>{text}</p>
+        <p className='para_color'>{text}</p>
         {/* <Rating ratingNumber={ratingNumber} /> */}
       </div>
       <div className="cs_testimonial_meta">

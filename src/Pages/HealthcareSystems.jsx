@@ -42,13 +42,6 @@ export default function HealthcareSystems() {
                     data={HSdata}
                 />
             </Section>
-            <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
-                <FeaturesSectionStyle2
-                    sectionTitle="Why Choose Xphyre Health for Your Healthcare System?"
-                    imgUrl="images/about/why_choose_us.jpeg"
-                    data={WhyUsDataHS}
-                />
-            </Section>
             <Spacing md="200" lg="10" xl="150" />
             <Section className="cs_footer_margin_0">
                 <BannerSectionStyle4
@@ -58,6 +51,14 @@ export default function HealthcareSystems() {
                 />
             </Section>
             <Spacing md="200" lg="10" xl="150" />
+            <Section topMd={175} topLg={125} topXl={85} bottomMd={100} bottomLg={110}>
+                <FeaturesSectionStyle2
+                    sectionTitle="Why Choose Xphyre Health for Your Healthcare System?"
+                    imgUrl="images/about/why_choose_us.jpeg"
+                    data={WhyUsDataHS}
+                />
+            </Section>
+            {/* <Spacing md="200" lg="10" xl="150" /> */}
         </>
     );
 }

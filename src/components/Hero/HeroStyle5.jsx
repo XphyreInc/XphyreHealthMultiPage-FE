@@ -1,22 +1,14 @@
 import React from 'react';
-
-// import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import ContactButton from '../Button/ContactButton';
 
 export default function HeroStyle5({
   title,
-  subTitle,
   detail,
-  bgUrl,
   p,
   H,
   imgUrl,
-  videoBtnText,
-  videoUrl,
   funfactList,
-  btnText,
-  btnUrl,
 }) {
   return (
     <section className="cs_hero cs_style_2 cs_type_1">

@@ -153,20 +153,20 @@ export const departmentData = [
 export const WhyUsData = [
     {
         iconUrl: compassion,
-        title: 'Unmatched Expertise',
+        title: 'Expert Knowledge and Experience',
         subTitle:
-            'Fostering organic client relations and maximizing reimbursements requires intimate knowledge of credentialing and contracting. Our certified and experienced specialists at Xphyre Health understand the ins and outs of contracts and negotiations.Thus, our experts empower you to deliver exceptional healthcare services while maximizing revenue.',
+            'Our billing specialists have extensive experience in the healthcare industry, ensuring accurate and efficient handling of medical billing and coding. We stay updated with the latest industry standards and regulations to provide top-notch services.',
     },
     {
         iconUrl: compassion,
-        title: 'Personalized Service',
+        title: ' Innovative Technology',
         subTitle:
-            `Xphyre Health believes that no two healthcare clinics are similar, so we offer customized solutions to meet your unique needs. Our dedicated staff of trained medical revenue management experts work closely with your team, providing regular updates and personalized support.What's more? We utilize the latest technology to mitigate the risk of costly errors while enhancing your turnaround times.`,
+            `Xphyre Health leverages cutting-edge technology to streamline the billing process. Our advanced tools and software enhance accuracy, speed up claim processing, and reduce errors, making your billing operations smoother and more reliable.`,
     },
     {
         iconUrl: compassion,
-        title: 'Your Pathway to Simplicity: How to Get Started with Xphyre Health',
-        subTitle: `Empower your practice with top-tier credentialing and contracting services by partnering with Xphyre Health today! By reaching out, you can learn more about how we help you navigate credentialing and contracting challenges.`,
+        title: 'Comprehensive Service',
+        subTitle: `From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.`,
     },
 ];
 
@@ -1388,3 +1388,22 @@ export const WhoWeServeCommon2 = [
         title: 'Clinics and Imaging Centers',
     },
 ];
+
+export const tabData = [
+    {
+        id: 1,
+        name: "Expert Knowledge",
+        testimonial: "Our billing specialists have extensive experience in the healthcare industry, ensuring accurate and efficient handling of medical billing and coding. We stay updated with the latest industry standards and regulations to provide top-notch services.",
+    },
+    {
+        id: 2,
+        name: "Innovative Technology",
+        testimonial: "Xphyre Health leverages cutting-edge technology to streamline the billing process. Our advanced tools and software enhance accuracy, speed up claim processing, and reduce errors, making your billing operations smoother and more reliable.",
+    },
+    {
+        id: 3,
+        name: "Comprehensive Service",
+        testimonial: "From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.",
+    }
+];
+
