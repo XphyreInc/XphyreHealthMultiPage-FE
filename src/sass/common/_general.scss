@@ -204,6 +204,10 @@
 
 .cs_img_filed {
   height: 100%;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
 
   >img {
     height: 100%;
@@ -823,17 +827,6 @@ input::-ms-input-placeholder,
   }
 }
 
-@media (max-width: 1024px) {
-  .cs_iconbox_icon {
-    width: 18rem !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .on_mobile {
-    display: none;
-  }
-}
 
 .cs_tabs.cs_style1 {
   display: flex;

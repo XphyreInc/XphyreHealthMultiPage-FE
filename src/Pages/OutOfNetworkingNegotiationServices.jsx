@@ -1,9 +1,10 @@
 import React from 'react';
 import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
-import BannerSectionStyle4 from '../components/Section/BannerSection/BannerSectionStyle4';
+import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
 import DepartmentSection from '../components/Section/DepartmentSection';
+import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
 import { OONNSdata1, OONNSdata2, WhoWeServeCommon } from '../Constants/constants';
@@ -20,7 +21,8 @@ export default function OutOfNetworkingNegotiationServices() {
         title="Out of Networking Negotiation Services"
         subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
       />
-      <Section topMd={135} topLg={100} topXl={100}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section >
         <AboutSectionStyle2
           title="Navigate Quality Out of Networking Solutions with Ease"
           p1="Medical out-of-network negotiation is critical to maximizing your reimbursements and savings. Out-of-network claims can result in significant revenue losses and dissatisfied customers without proper negotiation."
@@ -29,26 +31,30 @@ export default function OutOfNetworkingNegotiationServices() {
           imgUrl="/images/departments/department_img_1.png"
         />
       </Section>
-      <Section topMd={200} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section >
         <DepartmentSectionStyle2
           sectionTitle="Transform Your Practice's"
           data={OONNSdata1}
         />
       </Section>
-      <Section className="cs_footer_margin_0">
-        <BannerSectionStyle4
-          bgUrl="images/doctors/banner_bg_2.jpeg"
-          title="Why Us?"
-          subTitle="Cultivate deep, long-lasting relationships with insurance companies and patients with Xphyre Health's expert staff"
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
+        <BannerSectionStyle2
+          bgUrl="/images/home_2/cta_bg.jpeg"
+          title="Transform Your Practice with Effortless Billing Solutions from Xphyre Health"
+          subTitle=""
         />
       </Section>
-      <Section topMd={200} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section >
         <DepartmentSectionStyle2
           sectionTitle="Elevate Your Clinics"
           data={OONNSdata2}
         />
       </Section>
-      <Section topMd={185} topLg={150} topXl={110}>
+      <Spacing md="150" lg="7" xl="100" />
+      <Section>
         <DepartmentSection
           sectionTitle="Boosting Your Practice's Revenue with Premium Out-of-Network Solutions: Who We Serve?"
           bgUrl="images/home_1/department_bg.svg"
