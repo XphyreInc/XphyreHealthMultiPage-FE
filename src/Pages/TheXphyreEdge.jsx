@@ -19,13 +19,9 @@ export default function TheXphyreEdge() {
                 title="The Xphyre Edge"
                 subTitle=""
             />
+            <Spacing md="150" lg="7" xl="100" />
+
             <Section
-                topMd={185}
-                topLg={140}
-                topXl={100}
-                bottomMd={200}
-                bottomLg={150}
-                bottomXl={100}
                 className="cs_gray_bg_1"
             >
                 <FeaturesSectionStyle5
@@ -33,7 +29,7 @@ export default function TheXphyreEdge() {
                     data={TheXphyreEdgedata}
                 />
             </Section>
-            <Spacing md="200" lg="10" xl="150" />
+            <Spacing md="150" lg="7" xl="100" />
             <Section>
                 <BannerSectionStyle2
                     bgUrl="/images/home_2/cta_bg.jpeg"
@@ -41,7 +37,6 @@ export default function TheXphyreEdge() {
                     subTitle=""
                 />
             </Section>
-            <Spacing md="200" lg="10" xl="150" />
         </>
     );
 }

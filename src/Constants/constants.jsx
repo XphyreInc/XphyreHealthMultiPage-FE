@@ -1391,17 +1391,18 @@ export const WhoWeServeCommon2 = [
 
 export const tabData = [
     {
-        id: 1,
         title: "Expert Knowledge",
         detail: "Our billing specialists have extensive experience in the healthcare industry, ensuring accurate and efficient handling of medical billing and coding. We stay updated with the latest industry standards and regulations to provide top-notch services.",
     },
     {
-        id: 2,
         title: "Innovative Technology",
         detail: "Xphyre Health leverages cutting-edge technology to streamline the billing process. Our advanced tools and software enhance accuracy, speed up claim processing, and reduce errors, making your billing operations smoother and more reliable.",
     },
     {
-        id: 3,
+        title: "Comprehensive Service",
+        detail: "From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.",
+    },
+    {
         title: "Comprehensive Service",
         detail: "From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.",
     }
