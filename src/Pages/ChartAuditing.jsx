@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import Spacing from '../components/Spacing';
 import BannerSectionStyle2 from '../components/Section/BannerSection/BannerSectionStyle2';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
@@ -14,12 +14,13 @@ export default function ChartAuditing() {
     pageTitle('CA');
     return (
         <>
-            <BannerSectionStyle5
-                bgUrl="/images/doctors/banner_bg.svg"
-                imgUrl="/images/doctors/banner_img.png"
-                title="Chart Auditing"
-                subTitle=""
-            />
+        <HeroStyle5
+        title="Chart Auditing"
+        detail="Are you fed up with the intricacies and time constraints of chart auditing? You're not alone. Many healthcare professionals have the problem of keeping medical records that are accurate and in compliance. Here at Xphyre Health, we simplify and speed up the record auditing process so you can focus on providing top-notch patient care. 
+Whether you run a small clinic or a major hospital, our skilled auditing services are tailored to your requirements and help you streamline operations. Find out how our excellent chart auditing services can assist you in achieving accuracy, compliance, and operating excellence.
+"
+        imgUrl="/images/home_5/hero_img.png"
+      />
             <Spacing md="150" lg="7" xl="100" />
             <Section>
                 <AboutSectionStyle2

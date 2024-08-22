@@ -1403,8 +1403,8 @@ export const tabData = [
         detail: "From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.",
     },
     {
-        title: "Comprehensive Service",
-        detail: "From medical coding and billing to administrative support, Xphyre Health offers a full spectrum of services to manage your revenue cycle effectively. We handle every detail, so you can focus on delivering exceptional patient care.",
+        title: "Proven Results",
+        detail: "Healthcare practices across Houston trust Xphyre Health for our reliable and effective billing solutions. Our proven track record of transforming revenue cycles and boosting financial performance speaks for itself",
     }
 ];
 

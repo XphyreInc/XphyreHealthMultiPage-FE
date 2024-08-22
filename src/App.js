@@ -31,7 +31,8 @@ function App() {
   }, [pathname]);
   return (
     <Routes>
-      <Route  element={<Layout />}>
+      <Route element={<Layout />}>
+        <Route index element={<Home />} />
         <Route path='/Home' element={<Home />} />
         <Route path="C&C" element={<CredentialingAndContractingServices />} />
         <Route path="IEVS" element={<InsuranceEligibilityVerificationServices />} />

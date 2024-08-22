@@ -1,6 +1,6 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
 import Spacing from '../components/Spacing';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import Section from '../components/Section';
 import DepartmentSection from '../components/Section/DepartmentSection';
@@ -14,11 +14,12 @@ export default function CredentialingAndContractingServices() {
   pageTitle('C&C');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+      <HeroStyle5
         title="Credentialing and Contracting Services"
-        subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
+        detail="Credentialing and contracting are complex yet vital processes, requiring extensive documentation and verification for a simple insurance enrolment. A tiny error, a missing form, or incorrect information can have a profound impact, potentially delaying enrollment or even leading to contract cancellation, which could result in significant trust and revenue loss.  
+        Our medical credentialing and contracting services empower your staff to foster long-lasting relations with insurance companies and patients. With our proficient,    error-free, and reliable credentialing services to diverse hospitals and healthcare systems, your clinic can enjoy improved relationships with insurance payors and   carriers. 
+         Let our experts simplify these complex processes, enhance operational efficiency, and cultivate robust client relations to help you serve more patients!"
+        imgUrl="/images/home_5/hero_img.png"
       />
       <Spacing md="150" lg="7" xl="100" />
       <Section>

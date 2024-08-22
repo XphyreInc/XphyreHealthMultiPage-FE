@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
@@ -15,11 +15,12 @@ export default function OutOfNetworkingNegotiationServices() {
   pageTitle('OONNS');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+      <HeroStyle5
         title="Out of Networking Negotiation Services"
-        subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
+        detail="Negotiating outside of networking is a vital yet daunting task for hospitals, medical clinics, and emergency rooms. It takes an intimate knowledge of the industry and expert negotiation skills to discover the most cost-effective out-of-network services.
+At Xphyre Health, our team of negotiation specialists utilizes proven tactics and state-of-the-art technology to maximize reimbursements for out-of-network services. Our experts negotiate directly with insurance companies to unlock competitive compensations, reduce your financial burden, and offer customers exciting saving opportunities.   
+With our extensive experience and dedicated approach, we streamline your out-of-network claims and uncover additional discounts. Our expertise lets you focus on delivering top-notch patient care, knowing that your clinic's financial health is safe."
+        imgUrl="/images/home_5/hero_img.png"
       />
       <Spacing md="150" lg="7" xl="100" />
       <Section >

@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
@@ -15,11 +15,13 @@ export default function PatientBillingServices() {
   pageTitle('PBS');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+      <HeroStyle5
         title="Patient Billing Services"
-        subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
+        detail="Are you drowning in a sea of patient calls and medical bills? Does your practice lack a dedicated billing and coding team? Handling patient billing can be demanding and frustrating, from translating medical records and collecting dues to gathering patients.
+But with Xphyre Health's proficient medical patient billers and comprehensive billing solutions, you can turn these challenges into opportunities to enhance your practice's efficiency and increase customer satisfaction.
+The result? Your staff can focus on priority tasks, enhancing your practice's efficiency and increasing customer satisfaction!  
+"
+        imgUrl="/images/home_5/hero_img.png"
       />
       <Spacing md="150" lg="7" xl="100" />
       <Section>

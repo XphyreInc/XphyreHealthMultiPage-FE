@@ -1,5 +1,4 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
 import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
@@ -8,6 +7,7 @@ import DepartmentSection from '../components/Section/DepartmentSection';
 import Section from '../components/Section';
 import { pageTitle } from '../helpers/PageTitle';
 import { IEVSData1, IEVSdata2, WhoWeServeIEVS } from '../Constants/constants';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 
 
 
@@ -15,11 +15,13 @@ export default function InsuranceEligibilityVerificationServices() {
   pageTitle('IEVS');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+      <HeroStyle5
         title="Insurance Eligibility Verification Services"
-        subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
+        detail="Eligibility and insurance verification are vital in medical billing and authorization to ensure accurate and timely submissions and reimbursements. A healthcare practice without the appropriate checks and balances can lose money when critical information or payment details are missing.
+Medical clinics can minimize financial losses and claim rejections with expert insurance eligibility verification solutions. It means no reimbursement delays and better cash flow! At Xphyre Health, our experts obtain prior authorization and validate eligibility to save you time and unnecessary authorization headaches. 
+Our trained and experienced medical billing and authorization specialists deliver swift and efficient eligibility verification, maximizing claim acceptance and minimizing denials. That's how we help take your practice's financial health to the next level!
+"
+        imgUrl="/images/home_5/hero_img.png"
       />
       <Spacing md="150" lg="7" xl="100" />
       <Section>

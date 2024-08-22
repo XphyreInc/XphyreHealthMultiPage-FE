@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
 import DepartmentSection from '../components/Section/DepartmentSection';
@@ -16,11 +16,13 @@ export default function PriorAndRetroAuthorizationServices() {
   pageTitle('PBS');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+     <HeroStyle5
         title="Prior and Retro Authorization Services"
-        subTitle=""
+        detail="The prior and retro authorization process can be challenging, consuming significant time and energy. It can significantly harm your practice's efficiency and service delivery, not to mention the impact on your clinic's turnaround times.
+That's where Xphyre Health's prior and retro authorization solutions enter the frame! Our trained and experienced specialists streamline pre- and retro-authorization services, taking the stress of administrative tasks off your shoulders.
+What's more, our expert technicians simplify the pre-certification, form completion, and document submission processes, allowing you to focus on better patient care while maximizing your clinic's financial health.
+"
+        imgUrl="/images/home_5/hero_img.png"
       />
       <Spacing md="150" lg="7" xl="100" />
       <Section >

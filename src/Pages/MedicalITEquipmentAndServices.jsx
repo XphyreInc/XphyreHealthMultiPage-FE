@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
@@ -15,11 +15,12 @@ export default function MedicalITEquipmentAndServices() {
   pageTitle('MIEAS');
   return (
     <>
-      <BannerSectionStyle5
-        bgUrl="/images/doctors/banner_bg.svg"
-        imgUrl="/images/doctors/banner_img.png"
+      <HeroStyle5
         title="Medical IT Equipment and Services"
-        subTitle="Unlock Healthcare Excellence with Expert Credentialing and Contracting "
+        detail="In today's fast-paced digital world, staying ahead with cutting-edge technology is crucial for your medical practice's success. However, acquiring and maintaining top-notch IT services and equipment can burn a hole in your pocket.
+That's where Xphyre Health comes in! Our top-notch, cost-effective IT equipment and services solutions provide healthcare facilities with the technology, usability, and reliability to thrive. With our state-of-the-art solution and quality IT equipment, we help enhance your workplace's performance and productivity.
+Whether it's long-term IT services or reliable medical equipment, Xphyre Health's proficient staff works with you to tailor our solutions to match your in-house capabilities and IT needs!"
+        imgUrl="/images/home_5/hero_img.png"
       />
       <Spacing md="150" lg="7" xl="100" />
       <Section>

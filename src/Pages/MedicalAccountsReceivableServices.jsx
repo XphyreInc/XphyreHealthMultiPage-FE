@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import AboutSectionStyle2 from '../components/Section/AboutSection/AboutSectionStyle2';
@@ -14,11 +14,14 @@ export default function MedicalAccountsReceivableServices() {
     pageTitle('MARS');
     return (
         <>
-            <BannerSectionStyle5
-                bgUrl="/images/doctors/banner_bg.svg"
-                imgUrl="/images/doctors/banner_img.png"
+
+            <HeroStyle5
                 title="Medical Accounts Receivable Services"
-                subTitle=""
+                detail="Your healthcare clinic works hard to provide top-quality patient care, but are you getting the compensation you deserve? Errors in medical billing and incorrect forms mean lost revenue, claim denials, and legal troubles for your staff.
+However, partnering with an expert medical accounts receivable service provider ensures your healthcare facility receives fair payments. It aids medical clinics in streamlining their cash flow, providing timely and error-free invoices and optimized reimbursements.
+At Xphyre Health, our dedicated team of AR specialists takes the stress of processing invoices, filing out complex forms, and streamlining financial systems off your shoulders. This way, our trained AR experts help your healthcare facility maximize cash flow and minimize the collection timeframe!
+"
+                imgUrl="/images/home_5/hero_img.png"
             />
             <Spacing md="150" lg="7" xl="100" />
             <Section>

@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerSectionStyle5 from '../components/Section/BannerSection/BannerSectionStyle5';
+import HeroStyle5 from '../components/Hero/HeroStyle5';
 import Spacing from '../components/Spacing';
 import DepartmentSectionStyle2 from '../components/Section/DepartmentSection/DepartmentSectionStyle2';
 import DepartmentSection from '../components/Section/DepartmentSection';
@@ -14,11 +14,13 @@ export default function MedicalBillingAndCodingServices() {
     pageTitle('MB&CS');
     return (
         <>
-            <BannerSectionStyle5
-                bgUrl="/images/doctors/banner_bg.svg"
-                imgUrl="/images/doctors/banner_img.png"
+            <HeroStyle5
                 title="Medical Billing and Coding Services"
-                subTitle=""
+                detail="An efficient and productive healthcare practice starts with top-notch medical billing and coding services. A tiny mistake can result in week-long delays and unsatisfied clients, affecting your practice's reputation and patient's trust. 
+As the keystone of a healthcare provider's financial health, your organization requires a seamless billing and coding system. Our expert clinical billers and coders enter the picture, offering accurate and timely payments and freeing up your facility's resources. 
+Thus, with Xphyre Health's trained professionals, healthcare providers can minimize claim denials and billing errors, boosting patient flow and revenue! 
+"
+                imgUrl="/images/home_5/hero_img.png"
             />
             <Spacing md="150" lg="7" xl="100" />
             <Section >
