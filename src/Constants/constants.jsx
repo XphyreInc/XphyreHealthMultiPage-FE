@@ -385,7 +385,7 @@ export const C_and_C_Data2 = [
             What's more? We utilize the latest technology to mitigate the risk of costly errors while enhancing your turnaround times.`
     },
     {
-        title: 'Your Pathway to Simplicity: How to Get Started with Xphyre Health',
+        title: 'Your Pathway to Simplicity',
         description:
             `Empower your practice with top-tier credentialing and contracting services by partnering with Xphyre Health today! By reaching out, you can learn more about how we help you navigate credentialing and contracting challenges.`
     },
