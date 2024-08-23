@@ -96,11 +96,11 @@ export default function HeroStyle5({ title, detail, p, H, imgUrl, funfactList })
     <section className="cs_hero cs_style_2 cs_type_1">
       <div className="container">
         <div className="cs_hero_text">
-          <h3 className="cs_hero_title cs_white_color cs_fs_60">
+          <h3 className="cs_hero_title cs_white_color cs_fs_60 ">
             {parse(title)}
           </h3>
           <div className="cs_hero_text_in" style={{ display: "flex", flexDirection: "column" }}>
-            <p className="cs_hero_subtitle cs_white_color">{detail}</p>
+            <p className="cs_hero_subtitle cs_white_color ">{detail}</p>
             <div className='c_btn_1' style={{ position: "relative" }}>
               {specificRoutes1.includes(location.pathname) && (
                 <ContactButton buttonName="Call Us Today" />
