@@ -1178,7 +1178,7 @@ export const states = [
 ];
 
 export const navLinks = [
-    { to: "/Home", label: "Home", exact: true },
+    { to: "/", label: "Home", exact: true },
     { to: "/OurProcesses", label: "Our Processes" },
     {
         label: "Our Services",
