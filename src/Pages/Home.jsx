@@ -24,9 +24,9 @@ export default function HomeStyle2() {
         videoBtnText="See how we work"
         videoUrl="https://www.youtube.com/embed/VcaAVWtP48A"
         funfactList={[
-          { number: '98.99%', title: 'Accuracy Rate' },
+          { number: '98%', title: 'Accuracy Rate' },
           { number: '30%', title: 'Reduction in AR Days' },
-          { number: '95%', title: 'Satisfied Clients' },
+          { number: '98%', title: 'Satisfied Clients' },
           { number: '98%', title: 'Claim Approval' },
         ]}
       />
